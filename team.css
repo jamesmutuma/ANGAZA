@@ -1,0 +1,396 @@
+/* TEAM PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+
+    color: #17324d;
+
+    background: #ffffff;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+    font-size: 13px;
+
+    color: #444444;
+}
+
+.nav-links a {
+    color: #444444;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #08b8bd;
+}
+
+
+/* Current page */
+
+.nav-links a.active {
+    color: #08b8bd;
+
+    font-weight: 600;
+}
+
+
+/* TEAM HERO */
+
+.team-hero {
+    background: turquoise;
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.team-hero-content {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* Hero Heading */
+
+.team-hero h1 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    line-height: 1.2;
+}
+
+
+/* Hero Paragraph */
+
+.team-hero p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/*TEAM SECTION */
+
+.team-section {
+    background: #ffffff;
+
+    padding: 105px 20px 100px;
+}
+
+.team-container {
+    width: 100%;
+
+    max-width: 1060px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* TEAM CARD */
+
+.team-card {
+    background: #ffffff;
+
+    min-height: 390px;
+
+    padding: 23px 25px 28px;
+
+    border: 1px solid #cbd9dc;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Card hover */
+
+.team-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* MEMBER IMAGE */
+
+.team-image {
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: turquoise;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.team-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* MEMBER NAME */
+
+.team-card h2 {
+    margin: 0 0 3px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+}
+
+
+/* MEMBER ROLE */
+
+.team-card h3 {
+    margin: 0 0 14px;
+
+    color: #05b9c1;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* SHORT BIO */
+
+.team-short {
+    margin: 0;
+
+    color: #50657a;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* READ MORE */
+
+.team-details {
+    margin-top: 18px;
+}
+
+
+/* Remove default browser marker */
+
+.team-details summary {
+    display: inline-block;
+
+    cursor: pointer;
+
+    color: #df1b32;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    list-style: none;
+
+    transition: color 0.2s ease;
+}
+
+.team-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.team-details summary::after {
+    content: " →";
+
+    transition: margin-left 0.2s ease;
+}
+
+.team-details summary:hover {
+    color: #08b8bd;
+}
+
+.team-details summary:hover::after {
+    margin-left: 4px;
+}
+
+
+/* 
+   FULL MEMBER INFORMATION
+ */
+
+.team-full-info {
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e1e7e9;
+
+    text-align: left;
+}
+
+.team-full-info p {
+    margin: 0 0 14px;
+
+    color: #50657a;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.team-full-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   OPEN CARD
+========================================================= */
+
+.team-details[open] summary {
+    color: #08b8bd;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    /* Hero */
+
+    .team-hero {
+        min-height: 300px;
+
+        padding: 50px 20px;
+    }
+
+    .team-hero h1 {
+        font-size: 42px;
+    }
+
+    .team-hero p {
+        font-size: 18px;
+    }
+
+
+    /* Team cards */
+
+    .team-section {
+        padding: 70px 20px 80px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .team-card {
+        min-height: auto;
+
+        padding: 28px 25px 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .team-hero h1 {
+        font-size: 36px;
+    }
+
+    .team-hero p {
+        font-size: 17px;
+    }
+
+    .team-card h2 {
+        font-size: 21px;
+    }
+
+    .team-short {
+        font-size: 16px;
+    }
+
+}

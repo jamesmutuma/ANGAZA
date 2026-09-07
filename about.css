@@ -1,0 +1,338 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    color: #17324d;
+    background: #ffffff;
+}
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    font-size: 13px;
+    color: #444444;
+}
+
+.nav-links a {
+    color: #444444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #08b8bd;
+}
+
+/* Current page */
+.nav-links a.active {
+    color: #08b8bd;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero {
+    background: turquoise;
+    min-height: 325px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.about-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* Red label */
+
+.about-label {
+    display: inline-block;
+
+    background: #df1b32;
+    color: #ffffff;
+
+    padding: 6px 18px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Heading */
+
+.about-hero h1 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+    line-height: 1.6;
+}
+
+
+/* Description */
+
+.about-hero p {
+    max-width: 1400px;
+    width:auto;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   OUR STORY
+========================================================= */
+
+.our-story {
+    background: #ffffff;
+
+    padding: 105px 20px 95px;
+}
+
+
+.story-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+
+/* Story Image */
+
+.story-image {
+    width: 100%;
+}
+
+.story-image img {
+    width: 100%;
+
+    height: 335px;
+
+    object-fit: cover;
+
+    display: grid;
+
+
+    border-radius: 16px;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Story Text */
+
+.story-content {
+    padding-left: 0;
+}
+
+.story-content h2 {
+    margin: 0 0 22px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.story-content p {
+    margin: 0 0 22px;
+
+    color: #50657a;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+.story-content p:last-child {
+    margin-bottom: 0;
+}
+
+.story-content strong {
+    color: #17324d;
+}
+
+.story-content em {
+    color: #17324d;
+}
+
+
+/* =========================================================
+   OUR VALUES
+========================================================= */
+
+.our-values {
+    background: turquoise;
+
+    padding: 70px 20px 105px;
+
+    text-align: center;
+}
+
+
+/* Values heading */
+
+.values-header {
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+}
+
+.values-header h2 {
+    margin: 0 0 12px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+}
+
+.values-header p {
+    margin: 0;
+
+    color: #50657a;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* Values Cards */
+
+.values-container {
+    max-width: 1060px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Individual card */
+
+.value-card {
+    background: #ffffff;
+
+    min-height: 200px;
+
+    padding: 24px 25px;
+
+    border: 1px solid #cbd9dc;
+
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Value icon */
+
+.value-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #e2f8f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+}
+
+.value-icon i {
+    color: #05b9c1;
+
+    font-size: 19px;
+}
+
+
+/* Card heading */
+
+.value-card h3 {
+    margin: 0 0 10px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+}
+
+
+/* Card paragraph */
+
+.value-card p {
+    margin: 0;
+
+    color: #50657a;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
