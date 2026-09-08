@@ -1,5 +1,5 @@
 /* =========================================================
-   PROGRAMS PAGE
+   GENERAL
 ========================================================= */
 
 * {
@@ -8,36 +8,27 @@
 
 body {
     margin: 0;
-
     font-family: "DM Sans", sans-serif;
-
     color: #17324d;
-
     background: #ffffff;
 }
 
 
 /* =========================================================
-   NAVIGATION LINKS
+   NAVIGATION
 ========================================================= */
 
 .nav-links {
     display: flex;
-
     align-items: center;
-
     gap: 27px;
-
     font-size: 13px;
-
-    color: #444444;
+    color: #444;
 }
 
 .nav-links a {
-    color: #444444;
-
+    color: #444;
     text-decoration: none;
-
     transition: color 0.2s ease;
 }
 
@@ -45,12 +36,8 @@ body {
     color: #08b8bd;
 }
 
-
-/* Current page */
-
 .nav-links a.active {
     color: #08b8bd;
-
     font-weight: 600;
 }
 
@@ -61,13 +48,10 @@ body {
 
 .program-hero {
     background: turquoise;
-
     min-height: 340px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -77,14 +61,9 @@ body {
 
 .program-hero-content {
     width: 100%;
-
     max-width: 850px;
-
     margin: 0 auto;
 }
-
-
-/* Hero Heading */
 
 .program-hero h1 {
     margin: 0 0 18px;
@@ -92,47 +71,36 @@ body {
     color: #ffffff;
 
     font-family: "Playfair Display", serif;
-
     font-size: 52px;
-
     line-height: 1.2;
 }
 
-
-/* Hero Paragraph */
-
 .program-hero p {
     max-width: 850px;
-
     margin: 0 auto;
 
     color: #ffffff;
 
     font-size: 20px;
-
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   PROGRAM CARDS SECTION
+   PROGRAMS SECTION
 ========================================================= */
 
 .programs-section {
     background: #ffffff;
-
     padding: 100px 20px 80px;
 }
 
 .programs-container {
     width: 100%;
-
     max-width: 1060px;
-
     margin: 0 auto;
 
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
 
     gap: 30px 28px;
@@ -140,7 +108,40 @@ body {
 
 
 /* =========================================================
-   INDIVIDUAL PROGRAM CARD
+   PROGRAMS HEADER
+========================================================= */
+
+.programs-header {
+    grid-column: 1 / -1;
+
+    max-width: 780px;
+    margin: 0 auto 10px;
+
+    text-align: center;
+}
+
+.programs-header h2 {
+    margin: 0 0 15px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.programs-header p {
+    margin: 0;
+
+    color: #50657a;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROGRAM CARDS
 ========================================================= */
 
 .program-card {
@@ -151,20 +152,15 @@ body {
     padding: 29px 30px 32px;
 
     border: 1px solid #cbd9dc;
-
     border-radius: 15px;
 
     display: flex;
-
     flex-direction: column;
 
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
 }
-
-
-/* Card hover */
 
 .program-card:hover {
     transform: translateY(-5px);
@@ -180,7 +176,6 @@ body {
 
 .program-icon {
     width: 50px;
-
     height: 50px;
 
     border-radius: 14px;
@@ -188,9 +183,7 @@ body {
     background: #e2f8f9;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     margin-bottom: 23px;
@@ -198,31 +191,24 @@ body {
 
 .program-icon i {
     color: #05b9c1;
-
     font-size: 22px;
 }
 
 
 /* =========================================================
-   PROGRAM CARD HEADING
+   PROGRAM TEXT
 ========================================================= */
 
-.program-card h2 {
+.program-card h2,
+.program-card h3 {
     margin: 0 0 14px;
 
     color: #080808;
 
     font-family: "Playfair Display", serif;
-
     font-size: 22px;
-
     line-height: 1.3;
 }
-
-
-/* =========================================================
-   PROGRAM CARD PARAGRAPH
-========================================================= */
 
 .program-card p {
     margin: 0 0 20px;
@@ -230,7 +216,6 @@ body {
     color: #50657a;
 
     font-size: 18px;
-
     line-height: 1.6;
 }
 
@@ -241,7 +226,6 @@ body {
 
 .program-card ul {
     margin: auto 0 0;
-
     padding: 0;
 
     list-style: none;
@@ -251,18 +235,13 @@ body {
     position: relative;
 
     margin-bottom: 9px;
-
     padding-left: 18px;
 
-    color: #444444;
+    color: #444;
 
     font-size: 15px;
-
     line-height: 1.5;
 }
-
-
-/* Red bullet */
 
 .program-card li::before {
     content: "";
@@ -270,16 +249,14 @@ body {
     position: absolute;
 
     left: 0;
-
     top: 9px;
 
     width: 6px;
-
     height: 6px;
 
     border-radius: 50%;
 
-    background:black;
+    background: black;
 }
 
 .program-card li:last-child {
@@ -288,35 +265,331 @@ body {
 
 
 /* =========================================================
-   HOW WE DELIVER OUR PROGRAMS
+   HIDDEN PROGRAMS
+========================================================= */
+
+.extra-program {
+    display: none;
+}
+
+.extra-program.show-program {
+    display: flex;
+}
+
+
+/* =========================================================
+   SHOW MORE PROGRAMS
+========================================================= */
+
+.programs-more {
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+#showProgramsBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    background: #09b2e6;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+#showProgramsBtn:hover {
+    background: #06ac9e;
+
+    transform: translateY(-2px);
+}
+
+#showProgramsBtn i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services-section {
+    background: #f7fbfb;
+
+    padding: 95px 20px 100px;
+}
+
+.services-container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px 28px;
+}
+
+
+/* =========================================================
+   SERVICES HEADER
+========================================================= */
+
+.services-header {
+    grid-column: 1 / -1;
+
+    max-width: 780px;
+    margin: 0 auto 10px;
+
+    text-align: center;
+}
+
+.services-header h2 {
+    margin: 0 0 15px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.services-header p {
+    margin: 0;
+
+    color: #50657a;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.service-card {
+    background: #ffffff;
+
+    min-height: 390px;
+
+    padding: 30px;
+
+    border: 1px solid #cbd9dc;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.service-icon {
+    width: 54px;
+    height: 54px;
+
+    border-radius: 14px;
+
+    background: #e2f8f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 23px;
+}
+
+.service-icon i {
+    color: #05b9c1;
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.service-card h3 {
+    margin: 0 0 14px;
+
+    color: #080808;
+
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.service-card p {
+    margin: 0 0 25px;
+
+    color: #50657a;
+
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SERVICE BOOKING BUTTON
+========================================================= */
+
+.service-book-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 13px 20px;
+
+    background: #05c1da;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.service-book-button:hover {
+    background: #c9152a;
+
+    transform: translateY(-2px);
+}
+
+.service-book-button i {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   HIDDEN SERVICES
+========================================================= */
+
+.extra-service {
+    display: none;
+}
+
+.extra-service.show-service {
+    display: flex;
+}
+
+
+/* =========================================================
+   SHOW MORE SERVICES
+========================================================= */
+
+.services-more {
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+#showServicesBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    background: #df1b32;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+#showServicesBtn:hover {
+    background: #c9152a;
+
+    transform: translateY(-2px);
+}
+
+#showServicesBtn i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   HOW WE DELIVER
 ========================================================= */
 
 .program-delivery {
-    background:turquoise;
+    background: turquoise;
 
     padding: 105px 20px 100px;
 }
 
 .delivery-container {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     gap: 60px;
 
     align-items: center;
 }
-
-
-/* =========================================================
-   DELIVERY TEXT
-========================================================= */
 
 .delivery-content {
     padding-right: 10px;
@@ -328,9 +601,7 @@ body {
     color: #080808;
 
     font-family: "Playfair Display", serif;
-
     font-size: 34px;
-
     line-height: 1.2;
 }
 
@@ -340,7 +611,6 @@ body {
     color: #50657a;
 
     font-size: 18px;
-
     line-height: 1.7;
 }
 
@@ -359,7 +629,6 @@ body {
 
 .delivery-image img {
     width: 100%;
-
     height: 375px;
 
     object-fit: cover;
@@ -374,12 +643,16 @@ body {
 
 
 /* =========================================================
-   RESPONSIVE DESIGN
+   TABLET
 ========================================================= */
 
 @media (max-width: 1000px) {
 
     .programs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -396,9 +669,13 @@ body {
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 700px) {
 
-    /* Hero */
+    /* HERO */
 
     .program-hero {
         min-height: 300px;
@@ -415,7 +692,7 @@ body {
     }
 
 
-    /* Cards */
+    /* PROGRAMS */
 
     .programs-section {
         padding: 70px 20px;
@@ -427,6 +704,14 @@ body {
         gap: 22px;
     }
 
+    .programs-header h2 {
+        font-size: 34px;
+    }
+
+    .programs-header p {
+        font-size: 17px;
+    }
+
     .program-card {
         min-height: auto;
 
@@ -434,7 +719,34 @@ body {
     }
 
 
-    /* Delivery */
+    /* SERVICES */
+
+    .services-section {
+        padding: 70px 20px 80px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .services-header h2 {
+        font-size: 34px;
+    }
+
+    .services-header p {
+        font-size: 17px;
+    }
+
+    .service-card {
+        min-height: auto;
+
+        padding: 26px;
+    }
+
+
+    /* DELIVERY */
 
     .program-delivery {
         padding: 70px 20px 80px;
@@ -455,6 +767,10 @@ body {
 }
 
 
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
 @media (max-width: 500px) {
 
     .program-hero h1 {
@@ -465,6 +781,11 @@ body {
         font-size: 17px;
     }
 
+
+    .programs-header h2 {
+        font-size: 30px;
+    }
+
     .program-card h2 {
         font-size: 22px;
     }
@@ -472,6 +793,28 @@ body {
     .program-card p {
         font-size: 17px;
     }
+
+
+    .services-header h2 {
+        font-size: 30px;
+    }
+
+    .service-card h3 {
+        font-size: 22px;
+    }
+
+    .service-card p {
+        font-size: 17px;
+    }
+
+
+    #showProgramsBtn,
+    #showServicesBtn {
+        padding: 12px 20px;
+
+        font-size: 14px;
+    }
+
 
     .delivery-content h2 {
         font-size: 28px;
