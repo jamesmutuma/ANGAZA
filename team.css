@@ -1,170 +1,14 @@
 /* =====================================================
-   TEAM PAGE
-===================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-
-body {
-    margin: 0;
-
-    font-family: "DM Sans", sans-serif;
-
-    color: #17324d;
-
-    background: #ffffff;
-}
-
-
-
-/* =====================================================
-   NAVIGATION BAR
-===================================================== */
-
-.navbar {
-    width: 100%;
-
-    height: 62px;
-
-    background: #ffffff;
-
-    border-top: 2px solid #333333;
-
-    border-bottom: 1px solid #eeeeee;
-
-    position: relative;
-
-    z-index: 100;
-}
-
-
-.nav-container {
-    width: 100%;
-
-    max-width: 950px;
-
-    height: 100%;
-
-    margin: 0 auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-}
-
-
-
-/* LOGO */
-
-.logo {
-    display: flex;
-
-    align-items: center;
-
-    height: 100%;
-
-    text-decoration: none;
-}
-
-
-.logo img {
-    width: 80px;
-
-    height: 58px;
-
-    object-fit: contain;
-
-    display: block;
-}
-
-
-
-/* NAV LINKS */
-
-.nav-links {
-    display: flex;
-
-    align-items: center;
-
-    gap: 25px;
-
-    height: 100%;
-}
-
-
-.nav-links a {
-    font-family: "DM Sans", sans-serif;
-
-    font-size: 12px;
-
-    font-weight: 400;
-
-    color: #333333;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    transition: color 0.2s ease;
-}
-
-
-.nav-links a:hover {
-    color: #08b8bd;
-}
-
-
-.nav-links a.active {
-    color: #08b8bd;
-
-    font-weight: 600;
-}
-
-
-
-/* DONATE BUTTON */
-
-.nav-donate {
-    background: #df0623 !important;
-
-    color: #ffffff !important;
-
-    font-weight: 600 !important;
-
-    padding: 11px 19px;
-
-    border-radius: 8px;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-
-.nav-donate:hover {
-    background: #c9041e !important;
-
-    color: #ffffff !important;
-
-    transform: translateY(-1px);
-}
-
-
-
-/* =====================================================
-   HERO SECTION
+   TEAM HERO
 ===================================================== */
 
 .team-hero {
+
     width: 100%;
 
-    min-height: 235px;
+    min-height: 315px;
 
-    background: #3ed7cb;
+    background: turquoise;
 
     display: flex;
 
@@ -174,18 +18,24 @@ body {
 
     text-align: center;
 
-    padding: 45px 20px;
+    padding: 60px 20px;
+
 }
 
 
 .team-hero-content {
+
+    width: 100%;
+
     max-width: 850px;
 
     margin: 0 auto;
+
 }
 
 
 .team-hero h1 {
+
     font-family: "Playfair Display", serif;
 
     font-size: 48px;
@@ -195,13 +45,17 @@ body {
     color: #ffffff;
 
     margin: 0 0 17px;
+
 }
 
 
 .team-hero p {
+
     max-width: 700px;
 
     margin: 0 auto;
+
+    font-family: "DM Sans", sans-serif;
 
     font-size: 18px;
 
@@ -210,6 +64,7 @@ body {
     color: #ffffff;
 
     font-weight: 500;
+
 }
 
 
@@ -219,18 +74,26 @@ body {
 ===================================================== */
 
 .team-section {
+
     width: 100%;
 
     padding: 85px 20px 70px;
 
     background: #ffffff;
+
 }
 
 
 .management-section {
+
+    width: 100%;
+
     background: #f5fafb;
 
-    padding-top: 85px;
+    padding: 85px 20px 70px;
+
+    border-top: 1px solid #edf3f4;
+
 }
 
 
@@ -240,15 +103,20 @@ body {
 ===================================================== */
 
 .section-heading {
+
+    width: 100%;
+
     max-width: 800px;
 
     margin: 0 auto 45px;
 
     text-align: center;
+
 }
 
 
 .section-heading h2 {
+
     font-family: "Playfair Display", serif;
 
     font-size: 36px;
@@ -258,10 +126,12 @@ body {
     color: #080808;
 
     margin: 0 0 15px;
+
 }
 
 
 .section-heading p {
+
     font-family: "DM Sans", sans-serif;
 
     font-size: 17px;
@@ -273,15 +143,17 @@ body {
     margin: 0 auto;
 
     max-width: 760px;
+
 }
 
 
 
 /* =====================================================
-   TEAM CARD GRID
+   TEAM CARD CONTAINER
 ===================================================== */
 
 .team-container {
+
     width: 100%;
 
     max-width: 950px;
@@ -293,6 +165,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 27px;
+
 }
 
 
@@ -302,6 +175,9 @@ body {
 ===================================================== */
 
 .team-card {
+
+    width: 100%;
+
     background: #ffffff;
 
     border: 1px solid #cbd9dc;
@@ -317,13 +193,16 @@ body {
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
+
 }
 
 
 .team-card:hover {
+
     transform: translateY(-4px);
 
     box-shadow: 0 8px 22px rgba(23, 50, 77, 0.08);
+
 }
 
 
@@ -333,6 +212,7 @@ body {
 ===================================================== */
 
 .team-image {
+
     width: 260px;
 
     height: 270px;
@@ -348,10 +228,12 @@ body {
     border: 3px solid #ffffff;
 
     box-shadow: 0 0 0 1px #cbd9dc;
+
 }
 
 
 .team-image img {
+
     width: 100%;
 
     height: 100%;
@@ -359,6 +241,7 @@ body {
     object-fit: cover;
 
     display: block;
+
 }
 
 
@@ -368,6 +251,7 @@ body {
 ===================================================== */
 
 .team-card h3 {
+
     font-family: "Playfair Display", serif;
 
     font-size: 19px;
@@ -377,6 +261,7 @@ body {
     color: #080808;
 
     margin: 0 0 5px;
+
 }
 
 
@@ -386,6 +271,7 @@ body {
 ===================================================== */
 
 .team-card h4 {
+
     font-family: "DM Sans", sans-serif;
 
     font-size: 12px;
@@ -394,11 +280,12 @@ body {
 
     font-weight: 600;
 
-    color: #05b9c1;
+    color: #08b8bd;
 
     margin: 0 0 15px;
 
     text-transform: uppercase;
+
 }
 
 
@@ -408,6 +295,7 @@ body {
 ===================================================== */
 
 .team-short {
+
     font-family: "DM Sans", sans-serif;
 
     font-size: 14px;
@@ -419,6 +307,7 @@ body {
     margin: 0 auto 17px;
 
     max-width: 280px;
+
 }
 
 
@@ -428,11 +317,14 @@ body {
 ===================================================== */
 
 .team-details {
+
     margin-top: 5px;
+
 }
 
 
 .team-details summary {
+
     list-style: none;
 
     cursor: pointer;
@@ -445,19 +337,24 @@ body {
 
     font-weight: 600;
 
-    color: #df1b32;
+    color: #08b8bd;
 
     transition: color 0.2s ease;
+
 }
 
 
 .team-details summary::-webkit-details-marker {
+
     display: none;
+
 }
 
 
 .team-details summary:hover {
-    color: #b90018;
+
+    color: #079da2;
+
 }
 
 
@@ -467,6 +364,7 @@ body {
 ===================================================== */
 
 .team-full-info {
+
     margin-top: 18px;
 
     padding-top: 16px;
@@ -474,10 +372,12 @@ body {
     border-top: 1px solid #e4eeee;
 
     text-align: left;
+
 }
 
 
 .team-full-info p {
+
     font-family: "DM Sans", sans-serif;
 
     font-size: 14px;
@@ -487,11 +387,14 @@ body {
     color: #50657a;
 
     margin: 0 0 13px;
+
 }
 
 
 .team-full-info p:last-child {
+
     margin-bottom: 0;
+
 }
 
 
@@ -501,12 +404,16 @@ body {
 ===================================================== */
 
 .hidden-board {
+
     display: none;
+
 }
 
 
 .hidden-board.show-member {
+
     display: block;
+
 }
 
 
@@ -516,12 +423,16 @@ body {
 ===================================================== */
 
 .hidden-management {
+
     display: none;
+
 }
 
 
 .hidden-management.show-member {
+
     display: block;
+
 }
 
 
@@ -531,6 +442,7 @@ body {
 ===================================================== */
 
 .show-more-container {
+
     width: 100%;
 
     display: flex;
@@ -540,6 +452,7 @@ body {
     align-items: center;
 
     margin-top: 40px;
+
 }
 
 
@@ -549,9 +462,10 @@ body {
 ===================================================== */
 
 .show-more-btn {
+
     border: none;
 
-    background: turquoise;
+    background: #08b8bd;
 
     color: #ffffff;
 
@@ -580,28 +494,23 @@ body {
     transition:
         background 0.2s ease,
         transform 0.2s ease;
+
 }
 
 
 .show-more-btn:hover {
-    background: #079fa4;
+
+    background: #079da2;
 
     transform: translateY(-2px);
+
 }
 
 
 .show-more-btn i {
+
     font-size: 12px;
-}
 
-
-
-/* =====================================================
-   MANAGEMENT SECTION SEPARATOR
-===================================================== */
-
-.management-section {
-    border-top: 1px solid #edf3f4;
 }
 
 
@@ -612,25 +521,10 @@ body {
 
 @media (max-width: 1050px) {
 
-    .nav-container {
-        max-width: 920px;
-
-        padding: 0 20px;
-    }
-
-
-    .nav-links {
-        gap: 18px;
-    }
-
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-
     .team-container {
+
         max-width: 900px;
+
     }
 
 }
@@ -638,25 +532,17 @@ body {
 
 
 /* =====================================================
-   TABLET
+   SMALL TABLET
 ===================================================== */
 
 @media (max-width: 850px) {
 
-    .nav-container {
-        padding: 0 20px;
-    }
-
-
-    .nav-links {
-        gap: 13px;
-    }
-
-
     .team-container {
+
         grid-template-columns: repeat(2, 1fr);
 
         max-width: 700px;
+
     }
 
 }
@@ -669,106 +555,86 @@ body {
 
 @media (max-width: 650px) {
 
-    .navbar {
-        height: auto;
-    }
-
-
-    .nav-container {
-        flex-direction: column;
-
-        padding: 8px 15px 12px;
-
-        gap: 8px;
-    }
-
-
-    .logo {
-        height: 50px;
-    }
-
-
-    .logo img {
-        width: 78px;
-
-        height: 50px;
-    }
-
-
-    .nav-links {
-        width: 100%;
-
-        height: auto;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 10px 15px;
-    }
-
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-
-    .nav-donate {
-        padding: 9px 15px;
-    }
-
-
     .team-hero {
-        min-height: 270px;
 
-        padding: 45px 20px;
+        min-height: 280px;
+
+        padding: 55px 20px;
+
     }
 
 
     .team-hero h1 {
+
         font-size: 39px;
+
     }
 
 
     .team-hero p {
+
         font-size: 16px;
+
     }
 
 
     .team-section {
+
         padding: 60px 20px;
+
     }
 
 
     .management-section {
-        padding-top: 60px;
+
+        padding: 60px 20px;
+
     }
 
 
     .section-heading {
+
         margin-bottom: 35px;
+
     }
 
 
     .section-heading h2 {
+
         font-size: 31px;
+
     }
 
 
     .section-heading p {
+
         font-size: 15px;
+
     }
 
 
     .team-container {
+
         grid-template-columns: 1fr;
 
         max-width: 400px;
+
     }
 
 
     .team-card {
+
         min-height: 340px;
+
+    }
+
+
+    .team-image {
+
+        max-width: 260px;
+
+        width: 100%;
+
     }
 
 }
@@ -782,27 +648,37 @@ body {
 @media (max-width: 420px) {
 
     .team-hero h1 {
+
         font-size: 34px;
+
     }
 
 
     .team-hero p {
+
         font-size: 15px;
+
     }
 
 
     .section-heading h2 {
+
         font-size: 28px;
+
     }
 
 
     .team-card h3 {
+
         font-size: 18px;
+
     }
 
 
     .team-short {
+
         font-size: 13px;
+
     }
 
 }
