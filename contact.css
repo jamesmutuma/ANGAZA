@@ -3,90 +3,74 @@
 ========================================================= */
 
 
-/* =========================
+/* =========================================================
    CONTACT HERO
-========================= */
+========================================================= */
 
 .contact-hero {
-
     background-color: turquoise;
-
     min-height: 315px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
 
     padding: 80px 20px 60px;
-
 }
 
 
 .contact-hero-content {
-
+    width: 100%;
     max-width: 750px;
-
     margin: 0 auto;
-
 }
 
 
 .contact-hero h1 {
-
     margin: 0 0 18px;
 
     font-family: "Playfair Display", serif;
-
     font-size: 46px;
-
     font-weight: 700;
 
     line-height: 1.2;
 
     color: #ffffff;
-
 }
 
 
 .contact-hero p {
-
     margin: 0 auto;
 
     max-width: 650px;
 
     font-family: "DM Sans", sans-serif;
-
     font-size: 17px;
 
     line-height: 1.6;
 
     color: #ffffff;
-
 }
 
 
-
-/* =========================
+/* =========================================================
    CONTACT SECTION
-========================= */
+========================================================= */
 
 .contact-section {
+    width: 100%;
 
     background-color: #ffffff;
 
     padding: 100px 20px;
-
 }
 
 
 .contact-container {
 
     width: 100%;
-
     max-width: 1040px;
 
     margin: 0 auto;
@@ -95,22 +79,21 @@
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 70px;
+    column-gap: 70px;
 
     align-items: start;
-
 }
 
 
-
-/* =========================
-   LEFT SIDE
-========================= */
+/* =========================================================
+   LEFT CONTACT INFORMATION
+========================================================= */
 
 .contact-info {
+    width: 100%;
+    min-width: 0;
 
     padding-top: 5px;
-
 }
 
 
@@ -121,11 +104,9 @@
     font-family: "Playfair Display", serif;
 
     font-size: 32px;
-
     font-weight: 700;
 
     color: #111111;
-
 }
 
 
@@ -142,16 +123,16 @@
     line-height: 1.65;
 
     color: #536b83;
-
 }
 
 
-
-/* =========================
+/* =========================================================
    CONTACT DETAILS
-========================= */
+========================================================= */
 
 .contact-detail {
+
+    width: 100%;
 
     display: flex;
 
@@ -159,16 +140,16 @@
 
     gap: 15px;
 
-    margin-bottom: 24px;
-
+    margin-bottom: 25px;
 }
 
 
 .contact-icon-box {
 
     width: 38px;
-
     height: 38px;
+
+    min-width: 38px;
 
     flex-shrink: 0;
 
@@ -179,26 +160,29 @@
     display: flex;
 
     align-items: center;
-
     justify-content: center;
-
 }
 
 
-.contact-icon-box span {
+.contact-icon-box i {
 
     color: #08b8bd;
 
-    font-size: 20px;
+    font-size: 17px;
+}
 
-    line-height: 1;
 
+.contact-detail-text {
+
+    width: auto;
+
+    min-width: 0;
 }
 
 
 .contact-detail-text h3 {
 
-    margin: 1px 0 4px;
+    margin: 1px 0 5px;
 
     font-family: "DM Sans", sans-serif;
 
@@ -207,7 +191,6 @@
     font-weight: 600;
 
     color: #111111;
-
 }
 
 
@@ -224,38 +207,147 @@
     line-height: 1.55;
 
     color: #536b83;
-
 }
 
 
-.contact-detail-text a {
+.contact-detail-text > a {
 
     font-family: "DM Sans", sans-serif;
 
     font-size: 14px;
 
-    line-height: 1.6;
+    line-height: 1.7;
+
+    color: #08b8bd;
+
+    text-decoration: none;
+}
+
+
+.contact-detail-text > a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA ICONS
+   IMPORTANT:
+   THESE WILL ALWAYS APPEAR HORIZONTALLY
+========================================================= */
+
+.social-icons {
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: nowrap !important;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    width: max-content;
+
+    max-width: 100%;
+
+    margin-top: 16px;
+
+    padding: 0;
+
+    clear: both;
+}
+
+
+/* Each social media button */
+
+.social-icons a {
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    min-width: 40px !important;
+
+    max-width: 40px !important;
+
+    flex: 0 0 40px !important;
+
+    padding: 0;
+
+    margin: 0;
+
+    border-radius: 50%;
+
+    background-color: #e3f9fa;
 
     color: #08b8bd;
 
     text-decoration: none;
 
+    font-size: 18px;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 
-.contact-detail-text a:hover {
+/* Social media icons */
 
-    text-decoration: underline;
+.social-icons a i {
 
+    display: block;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    margin: 0;
+
+    padding: 0;
 }
 
 
+/* Hover */
 
-/* =========================
-   CONTACT FORM
-========================= */
+.social-icons a:hover {
+
+    background-color: #08b8bd;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   RIGHT SIDE CONTACT FORM
+========================================================= */
 
 .contact-form-container {
+
+    width: 100%;
+
+    min-width: 0;
 
     border: 1px solid #c9d9df;
 
@@ -265,31 +357,41 @@
 
     background-color: #ffffff;
 
+    box-sizing: border-box;
 }
 
 
 .contact-form {
 
     width: 100%;
-
 }
 
 
+/* =========================================================
+   FORM ROW
+========================================================= */
+
 .form-row {
+
+    width: 100%;
 
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     gap: 18px;
-
 }
 
 
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
 .form-group {
 
-    margin-bottom: 20px;
+    width: 100%;
 
+    margin-bottom: 20px;
 }
 
 
@@ -306,12 +408,10 @@
     font-weight: 500;
 
     color: #111111;
-
 }
 
 
 .form-group input,
-
 .form-group textarea {
 
     width: 100%;
@@ -335,14 +435,12 @@
     outline: none;
 
     transition: border-color 0.2s ease;
-
 }
 
 
 .form-group input {
 
     height: 36px;
-
 }
 
 
@@ -351,18 +449,19 @@
     min-height: 105px;
 
     resize: vertical;
-
 }
 
 
 .form-group input:focus,
-
 .form-group textarea:focus {
 
     border-color: #08b8bd;
-
 }
 
+
+/* =========================================================
+   SEND MESSAGE BUTTON
+========================================================= */
 
 .contact-submit {
 
@@ -387,7 +486,6 @@
     cursor: pointer;
 
     transition: background-color 0.2s ease;
-
 }
 
 
@@ -396,21 +494,18 @@
     margin-left: 7px;
 
     font-size: 17px;
-
 }
 
 
 .contact-submit:hover {
 
     background-color: #079fa3;
-
 }
 
 
-
-/* =========================
-   CONTACT PAGE RESPONSIVE
-========================= */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 900px) {
 
@@ -418,21 +513,17 @@
 
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        row-gap: 50px;
 
         max-width: 700px;
-
-    }
-
-
-    .contact-info {
-
-        text-align: left;
-
     }
 
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 600px) {
 
@@ -441,51 +532,84 @@
         min-height: 270px;
 
         padding: 70px 20px 50px;
-
     }
 
 
     .contact-hero h1 {
 
         font-size: 36px;
-
     }
 
 
     .contact-hero p {
 
         font-size: 15px;
-
     }
 
 
     .contact-section {
 
         padding: 65px 18px;
-
     }
 
 
     .contact-info h2 {
 
         font-size: 28px;
-
     }
 
+
+    /* First name and last name become one column */
 
     .form-row {
 
         grid-template-columns: 1fr;
 
         gap: 0;
-
     }
 
 
     .contact-form-container {
 
         padding: 25px 20px;
+    }
 
+
+    /* Keep social icons SIDE-BY-SIDE */
+
+    .social-icons {
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        flex-wrap: nowrap !important;
+
+        gap: 10px;
+
+        width: max-content;
+    }
+
+
+    .social-icons a {
+
+        width: 38px !important;
+
+        height: 38px !important;
+
+        min-width: 38px !important;
+
+        max-width: 38px !important;
+
+        flex: 0 0 38px !important;
+
+        font-size: 17px;
+    }
+
+
+    .social-icons a i {
+
+        font-size: 17px;
     }
 
 }
