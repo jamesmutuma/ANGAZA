@@ -1,0 +1,651 @@
+/* =====================================================
+   GALLERY PAGE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+
+    height: 62px;
+
+    background: #ffffff;
+
+    border-bottom: 2px solid #40d8cb;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.navbar-container {
+
+    width: 100%;
+
+    max-width: 960px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 10px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.logo a {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.logo img {
+
+    width: 78px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+
+    white-space: nowrap;
+}
+
+
+.nav-links a {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    color: #333333;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.nav-links a:hover {
+
+    color: #08b8bd;
+}
+
+
+.nav-links a.active {
+
+    color: #08b8bd;
+
+    font-weight: 600;
+}
+
+
+/* DONATE BUTTON */
+
+.nav-links .donate-btn {
+
+    background: #df1028;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    transition: background 0.2s ease;
+}
+
+
+.nav-links .donate-btn:hover {
+
+    background: #c90d23;
+
+    color: #ffffff;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.gallery-hero {
+
+    background: turquoise;
+
+    min-height: 325px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.gallery-hero-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+.gallery-hero h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+
+    margin: 0 0 20px;
+}
+
+
+.gallery-hero p {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =====================================================
+   GALLERY SECTION
+===================================================== */
+
+.gallery-section {
+
+    background: #ffffff;
+
+    padding: 75px 20px 100px;
+
+    overflow: hidden;
+}
+
+
+
+/* =====================================================
+   GALLERY HEADING
+===================================================== */
+
+.gallery-heading {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 50px;
+}
+
+
+.gallery-heading h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    color: #080808;
+
+    margin: 0 0 15px;
+}
+
+
+.gallery-heading p {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #50657a;
+
+    margin: 0;
+}
+
+
+
+/* =====================================================
+   GALLERY WRAPPER
+===================================================== */
+
+.gallery-wrapper {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+
+/* =====================================================
+   PHOTO VIEWPORT
+===================================================== */
+
+.gallery-viewport {
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+
+/* =====================================================
+   PHOTO TRACK
+===================================================== */
+
+.gallery-track {
+
+    display: flex;
+
+    gap: 25px;
+
+    width: max-content;
+
+    transform: translateX(0);
+
+    transition: transform 0.6s ease;
+}
+
+
+
+/* =====================================================
+   GALLERY CARD
+===================================================== */
+
+.gallery-card {
+
+    width: 300px;
+
+    background: #ffffff;
+
+    border: 1px solid #cbd9dc;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.gallery-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+.gallery-card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.gallery-caption {
+
+    padding: 18px 20px 20px;
+
+    min-height: 105px;
+}
+
+
+.gallery-caption p {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #50657a;
+
+    margin: 0;
+}
+
+
+
+/* =====================================================
+   SLIDER ARROWS
+===================================================== */
+
+.gallery-arrow {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #08b8bd;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.gallery-arrow:hover {
+
+    background: #069da2;
+
+    transform: scale(1.05);
+}
+
+
+.gallery-arrow:active {
+
+    transform: scale(0.95);
+}
+
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .navbar-container {
+
+        max-width: 100%;
+
+        padding: 0 25px;
+    }
+
+
+    .nav-links {
+
+        gap: 18px;
+    }
+
+
+    .gallery-card {
+
+        width: 280px;
+    }
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE - SMALL TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 10px 0;
+    }
+
+
+    .navbar-container {
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .gallery-wrapper {
+
+        gap: 10px;
+    }
+
+
+    .gallery-card {
+
+        width: 270px;
+    }
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .gallery-hero {
+
+        min-height: 280px;
+
+        padding: 50px 20px;
+    }
+
+
+    .gallery-hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .gallery-hero p {
+
+        font-size: 17px;
+    }
+
+
+    .gallery-section {
+
+        padding: 60px 15px 80px;
+    }
+
+
+    .gallery-heading h2 {
+
+        font-size: 32px;
+    }
+
+
+    .gallery-heading p {
+
+        font-size: 16px;
+    }
+
+
+    .gallery-card {
+
+        width: 260px;
+    }
+
+
+    .gallery-card img {
+
+        height: 195px;
+    }
+
+
+    .gallery-arrow {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE - SMALL PHONE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .logo img {
+
+        width: 75px;
+    }
+
+
+    .nav-links {
+
+        gap: 11px;
+    }
+
+
+    .nav-links a {
+
+        font-size: 12px;
+    }
+
+
+    .nav-links .donate-btn {
+
+        padding: 9px 15px;
+    }
+
+
+    .gallery-hero h1 {
+
+        font-size: 36px;
+    }
+
+
+    .gallery-hero p {
+
+        font-size: 16px;
+    }
+
+
+    .gallery-card {
+
+        width: 240px;
+    }
+
+
+    .gallery-card img {
+
+        height: 180px;
+    }
+
+
+    .gallery-arrow {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 13px;
+    }
+
+}

@@ -333,13 +333,13 @@ body {
 ===================================================== */
 
 .team-image {
-    width: 100px;
+    width: 260px;
 
-    height: 100px;
+    height: 270px;
 
     margin: 0 auto 20px;
 
-    border-radius: 50%;
+    border-radius: 8px;
 
     overflow: hidden;
 
