@@ -337,7 +337,7 @@
 
     font-weight: 600;
 
-    color: #08b8bd;
+    color: red;
 
     transition: color 0.2s ease;
 
@@ -465,7 +465,7 @@
 
     border: none;
 
-    background: #08b8bd;
+    background: turquoise;
 
     color: #ffffff;
 

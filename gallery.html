@@ -1,57 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | Angaza Wellness Foundation</title>
+```
+<title>Gallery | Angaza Wellness Foundation</title>
 
-    <!-- Main Website CSS -->
-    <link rel="stylesheet" href="style.css">
+<!-- Main Website CSS -->
+<link rel="stylesheet" href="style.css">
 
-    <!-- Gallery CSS -->
-    <link rel="stylesheet" href="gallery.css">
+<!-- Gallery CSS -->
+<link rel="stylesheet" href="gallery.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+```
 
 </head>
 
-
 <body>
 
-
+```
 <!-- =====================================================
      NAVIGATION BAR
-===================================================== -->
+====================================================== -->
 
 <header class="navbar">
 
-    <div class="navbar-container">
+    <div class="nav-container">
 
-        <!-- LOGO -->
-        <div class="logo">
+        <a href="index.html" class="logo">
+            <img src="ANGAZA_LOGO.jpeg" alt="Angaza Wellness">
+        </a>
 
-            <a href="index.html">
-
-                <img src="ANGAZA_LOGO.jpeg"
-                     alt="Angaza Wellness Foundation Logo">
-
-            </a>
-
-        </div>
-
-
-        <!-- NAVIGATION LINKS -->
         <nav class="nav-links">
 
             <a href="index.html">Home</a>
@@ -66,7 +55,7 @@
 
             <a href="testimonials.html">Testimonials</a>
 
-            <a href="partners.html">Partners</a>
+            <a href="#partners.html">Partners</a>
 
             <a href="gallery.html" class="active">Gallery</a>
 
@@ -74,11 +63,12 @@
 
             <a href="contact.html">Contact</a>
 
-            <a href="https://wa.me/254104699706"
-               class="donate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20am%20inspired%20by%20the%20work%20you%20are%20doing%20to%20promote%20wellness%20and%20strengthen%20our%20communities.%20I%20would%20like%20to%20make%20a%20donation%20to%20support%20your%20work.%20Please%20guide%20me%20on%20how%20I%20can%20make%20my%20contribution."
+               class="nav-donate"
+               target="_blank">
+
                 Donate
+
             </a>
 
         </nav>
@@ -88,607 +78,703 @@
 </header>
 
 
-
 <!-- =====================================================
-     HERO SECTION
-===================================================== -->
+     MAIN CONTENT
+====================================================== -->
 
-<section class="gallery-hero">
+<main>
 
-    <div class="gallery-hero-content">
+    <!-- =================================================
+         GALLERY HERO
+    ================================================== -->
 
-        <h1>Our Gallery</h1>
+    <section class="gallery-hero">
 
-        <p>
-            Explore moments, activities, events, and community experiences
-            that showcase the work and impact of Angaza Wellness Foundation.
-        </p>
+        <div class="gallery-hero-content">
 
-    </div>
+            <span class="gallery-label">
+                DOING LIFE TOGETHER
+            </span>
 
-</section>
+            <h1>Our Gallery</h1>
 
+            <p>
+                Explore moments from our programs, community activities,
+                mentorship sessions, and wellness initiatives.
+            </p>
 
+        </div>
 
-<!-- =====================================================
-     GALLERY SECTION
-===================================================== -->
-
-<section class="gallery-section">
-
-
-    <!-- SECTION HEADING -->
-
-    <div class="gallery-heading">
-
-        <h2>Moments That Matter</h2>
-
-        <p>
-            A collection of memorable moments from our programs,
-            activities, events, and community engagements.
-        </p>
-
-    </div>
-
+    </section>
 
 
     <!-- =================================================
-         GALLERY SLIDER
+         GALLERY SECTION
     ================================================== -->
 
-    <div class="gallery-wrapper">
+    <section class="gallery-section">
+
+        <div class="gallery-container">
+
+            <div class="gallery-heading">
+
+                <h2>Moments That Matter</h2>
+
+                <p>
+                    A glimpse into the people, activities, and communities
+                    that make the Angaza Wellness Foundation journey meaningful.
+                </p>
+
+            </div>
 
 
-        <!-- LEFT ARROW -->
+            <!-- =================================================
+                 PHOTO GRID
+            ================================================== -->
 
-        <button class="gallery-arrow gallery-prev"
-                id="prevBtn"
-                type="button"
-                aria-label="Previous photos">
-
-            <i class="fa-solid fa-chevron-left"></i>
-
-        </button>
+            <div class="gallery-grid">
 
 
+                <!-- PHOTO 1 -->
+                <div class="gallery-item">
 
-        <!-- PHOTO VIEWPORT -->
+                    <div class="gallery-image">
 
-        <div class="gallery-viewport">
+                        <img src="pic.jpg"
+                             alt="Angaza Wellness Foundation activity">
 
-            <div class="gallery-track" id="galleryTrack">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
 
-
-                <!-- ===============================
-                     PHOTO 1
-                ================================ -->
-
-                <div class="gallery-card">
-
-                    <img src="image1.jpg"
-                         alt="Angaza Wellness Foundation activity">
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           ########
-                        </p>
-
+                        Community members coming together to promote wellness and connection.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 2 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 2
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic1.jpg"
+                             alt="Angaza Wellness Foundation program">
 
-                    <img src="image2.jpg"
-                         alt="Angaza community event">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           ######
-                        </p>
-
+                        Creating safe spaces where people can connect and share experiences.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 3 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 3
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic2.jpg"
+                             alt="Angaza Wellness Foundation community">
 
-                    <img src="image3.jpg"
-                         alt="Wellness training session">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Encouraging conversations that promote positive mental health and wellbeing.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 4 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 4
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic3.jpg"
+                             alt="Angaza Wellness Foundation event">
 
-                    <img src="image4.jpg"
-                         alt="Community engagement">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            #########
-                        </p>
-
+                        Supporting communities through education, awareness, and meaningful engagement.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 5 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 5
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic4.jpg"
+                             alt="Angaza Wellness Foundation team">
 
-                    <img src="image5.jpg"
-                         alt="Team building activity">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           ######
-                        </p>
-
+                        Our team working together to create lasting community impact.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 6 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 6
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic5.jpg"
+                             alt="Angaza Wellness Foundation mentorship">
 
-                    <img src="image6.jpg"
-                         alt="Angaza team activity">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ########
-                        </p>
-
+                        Mentorship sessions helping young people discover purpose and potential.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 7 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 7
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic6.jpg"
+                             alt="Angaza Wellness Foundation workshop">
 
-                    <img src="image7.jpg"
-                         alt="Mental health awareness event">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ######
-                        </p>
-
+                        Participants learning practical skills for healthier and stronger lives.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 8 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 8
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic7.jpg"
+                             alt="Angaza Wellness Foundation gathering">
 
-                    <img src="image8.jpg"
-                         alt="Youth empowerment activity">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #########
-                        </p>
-
+                        Building relationships through shared experiences and community support.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 9 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 9
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic8.jpg"
+                             alt="Angaza Wellness Foundation outreach">
 
-                    <img src="image9.jpg"
-                         alt="Wellness program">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Reaching communities with messages of hope, resilience, and wellness.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 10 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 10
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic9.jpeg"
+                             alt="Angaza Wellness Foundation activity">
 
-                    <img src="image10.jpg"
-                         alt="Community wellness program">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ######
-                        </p>
-
+                        Working together to strengthen emotional and social wellbeing.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 11 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 11
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic10.jpg"
+                             alt="Angaza Wellness Foundation program">
 
-                    <img src="image11.jpg"
-                         alt="Angaza wellness event">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ######
-                        </p>
-
+                        Encouraging open conversations about mental health and emotional wellbeing.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 12 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 12
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic11.jpg"
+                             alt="Angaza Wellness Foundation event">
 
-                    <img src="image12.jpg"
-                         alt="Community support activity">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Bringing people together through purposeful community wellness activities.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 13 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 13
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic12.jpg"
+                             alt="Angaza Wellness Foundation community">
 
-                    <img src="image13.jpg"
-                         alt="Training workshop">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            #######
-                        </p>
-
+                        Celebrating progress, connection, and the power of community.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 14 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 14
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic13.jpg"
+                             alt="Angaza Wellness Foundation team">
 
-                    <img src="image14.jpg"
-                         alt="Angaza team">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Team members working together to support community wellness.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 15 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 15
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic14.jpg"
+                             alt="Angaza Wellness Foundation mentorship">
 
-                    <img src="image15.jpg"
-                         alt="Leadership training">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Empowering young people through guidance, mentorship, and encouragement.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 16 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 16
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic15.jpeg"
+                             alt="Angaza Wellness Foundation workshop">
 
-                    <img src="image16.jpg"
-                         alt="Wellness workshop">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           #######
-                        </p>
-
+                        Sharing knowledge that helps individuals make healthier choices.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 17 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 17
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic16.jpeg"
+                             alt="Angaza Wellness Foundation outreach">
 
-                    <img src="image17.jpg"
-                         alt="Community gathering">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ######
-                        </p>
-
+                        Connecting with communities through outreach and wellness initiatives.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 18 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 18
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic17.jpeg"
+                             alt="Angaza Wellness Foundation event">
 
-                    <img src="image18.jpg"
-                         alt="Team building session">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                           ######
-                        </p>
-
+                        Creating meaningful moments through teamwork and shared purpose.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 19 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 19
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic18.jpeg"
+                             alt="Angaza Wellness Foundation community activity">
 
-                    <img src="image19.jpg"
-                         alt="Angaza community program">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            ######
-                        </p>
-
+                        Promoting healthy communities through participation and collective action.
                     </div>
 
                 </div>
 
 
+                <!-- PHOTO 20 -->
+                <div class="gallery-item">
 
-                <!-- ===============================
-                     PHOTO 20
-                ================================ -->
+                    <div class="gallery-image">
 
-                <div class="gallery-card">
+                        <img src="pic19.jpeg"
+                             alt="Angaza Wellness Foundation gathering">
 
-                    <img src="image20.jpg"
-                         alt="Angaza Foundation event">
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
 
                     <div class="gallery-caption">
-
-                        <p>
-                            #########
-                        </p>
-
+                        Sharing smiles and experiences while doing life together.
                     </div>
 
                 </div>
 
+
+                <!-- PHOTO 21 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic20.jpeg"
+                             alt="Angaza Wellness Foundation activity">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Building confidence through supportive and inclusive community activities.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 22 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic21.jpeg"
+                             alt="Angaza Wellness Foundation program">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Promoting awareness and understanding through mental wellness education.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 23 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic22.jpeg"
+                             alt="Angaza Wellness Foundation team">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Our dedicated team serving communities with compassion and purpose.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 24 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic23.jpeg"
+                             alt="Angaza Wellness Foundation workshop">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Learning together and creating practical solutions for wellness.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 25 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic24.jpeg"
+                             alt="Angaza Wellness Foundation outreach">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Reaching more people with messages of hope and encouragement.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 26 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic25.jpeg"
+                             alt="Angaza Wellness Foundation community event">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Strengthening community connections through shared experiences and support.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 27 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic26.jpeg"
+                             alt="Angaza Wellness Foundation mentorship program">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Mentoring the next generation to grow with confidence and purpose.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 28 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic27.jpeg"
+                             alt="Angaza Wellness Foundation community support">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Supporting individuals as they take steps toward better wellbeing.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 29 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic28.jpeg"
+                             alt="Angaza Wellness Foundation event">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Celebrating the people and partnerships behind our community impact.
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 30 -->
+                <div class="gallery-item">
+
+                    <div class="gallery-image">
+
+                        <img src="pic29.jpeg"
+                             alt="Angaza Wellness Foundation community">
+
+                        <div class="image-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-caption">
+                        Together we continue illuminating minds and empowering communities.
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
+    </section>
 
-
-        <!-- RIGHT ARROW -->
-
-        <button class="gallery-arrow gallery-next"
-                id="nextBtn"
-                type="button"
-                aria-label="Next photos">
-
-            <i class="fa-solid fa-chevron-right"></i>
-
-        </button>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
+</main>
 <div id="footer"></div>
 
 <script src="FOOTERSCRIPT.JS"></script>
 
 
-
-<!-- =====================================================
-     GALLERY JAVASCRIPT
-===================================================== -->
-
-<script>
-
-    const galleryTrack = document.getElementById("galleryTrack");
-
-    const nextBtn = document.getElementById("nextBtn");
-
-    const prevBtn = document.getElementById("prevBtn");
-
-    let currentPosition = 0;
-
-
-    function getSlideAmount() {
-
-        const card = document.querySelector(".gallery-card");
-
-        const cardWidth = card.offsetWidth;
-
-        const gap = 25;
-
-        return cardWidth + gap;
-
-    }
-
-
-    nextBtn.addEventListener("click", function () {
-
-        const slideAmount = getSlideAmount();
-
-        const maxScroll =
-            galleryTrack.scrollWidth -
-            galleryTrack.parentElement.offsetWidth;
-
-        currentPosition += slideAmount;
-
-
-        if (currentPosition > maxScroll) {
-
-            currentPosition = maxScroll;
-
-        }
-
-
-        galleryTrack.style.transform =
-            `translateX(-${currentPosition}px)`;
-
-    });
-
-
-
-    prevBtn.addEventListener("click", function () {
-
-        const slideAmount = getSlideAmount();
-
-        currentPosition -= slideAmount;
-
-
-        if (currentPosition < 0) {
-
-            currentPosition = 0;
-
-        }
-
-
-        galleryTrack.style.transform =
-            `translateX(-${currentPosition}px)`;
-
-    });
-
-
-</script>
-
-
 </body>
-
 </html>
