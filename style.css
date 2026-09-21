@@ -45,7 +45,6 @@ section {
     left: 0;
 
     width: 100%;
-
     height: 68px;
 
     background: #ffffff;
@@ -76,14 +75,14 @@ section {
     display: flex;
 
     align-items: left;
-
 }
 
 .logo img {
     width: 90px;
-    height: auto;
-    display: block;
 
+    height: auto;
+
+    display: block;
 }
 
 
@@ -91,15 +90,21 @@ section {
 
 .nav-links {
     display: flex;
+
     align-items: center;
+
     gap: 27px;
+
     font-size: 13px;
+
     color: #444444;
 }
 
 .nav-links a {
     color: #444444;
+
     text-decoration: none;
+
     transition: color 0.2s ease;
 }
 
@@ -107,20 +112,29 @@ section {
     color: #08b8bd;
 }
 
+
 /* Current page */
+
 .nav-links a.active {
     color: #08b8bd;
+
     font-weight: 600;
 }
+
 
 /* Donate button */
 
 .nav-donate {
     background: #df0923;
+
     color: #ffffff !important;
+
     padding: 9px 18px;
+
     border-radius: 8px;
+
     font-weight: 600;
+
     transition: background 0.2s ease;
 }
 
@@ -128,19 +142,27 @@ section {
     background: #bd071d;
 }
 
-/*admin button*/
-.nav-admin{
+
+/* Admin button */
+
+.nav-admin {
     background: rgb(212, 52, 52);
-    color: white ! important;
+
+    color: white !important;
+
     padding: 9px 18px;
+
     border-radius: 8px;
+
     font-weight: 600;
+
     transition: background 0.2s ease;
 }
 
-.nav-admin:hover{
+.nav-admin:hover {
     background: #000080;
 }
+
 
 /* =========================================
    HERO
@@ -148,20 +170,29 @@ section {
 
 .hero {
     min-height: 708px;
+
     padding-top: 68px;
+
     position: relative;
+
     display: flex;
+
     align-items: center;
+
     overflow: hidden;
 
     background-image: url("image11.jpg");
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 }
 
 .hero-overlay {
     position: absolute;
+
     inset: 0;
 
     background: rgba(0, 0, 0, 0.45);
@@ -172,10 +203,15 @@ section {
 
 .hero-content {
     position: relative;
+
     z-index: 2;
+
     width: min(1060px, 92%);
+
     margin: 0 auto;
+
     color: white;
+
     padding-bottom: 20px;
 }
 
@@ -399,6 +435,7 @@ section {
 
 .program-icon {
     width: 43px;
+
     height: 43px;
 
     border-radius: 50%;
@@ -434,6 +471,290 @@ section {
 
 
 /* =========================================
+   NEWS / ARTICLES
+========================================= */
+
+.news {
+    background: #f5f4f4;
+
+    padding: 100px 0;
+}
+
+
+/*
+   Main news container
+
+   This follows the same layout as
+   the Three Pillars section.
+*/
+
+.news-container {
+    width: min(1060px, 92%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 43px;
+}
+
+
+/* =========================================
+   NEWS IMAGE
+========================================= */
+
+.news-image {
+    width: 360px;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.news-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   NEWS CONTENT
+========================================= */
+
+.news-content {
+    width: 100%;
+
+    align-self: center;
+}
+
+.news-content h2 {
+    font-size: 38px;
+
+    line-height: 1.3;
+
+    margin-bottom: 17px;
+
+    color: #111111;
+}
+
+.news-intro {
+    color: #47616b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   NEWS ITEMS
+========================================= */
+
+.news-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    width: 100%;
+}
+
+
+/*
+   Supports both:
+   .news-number
+   and the old .newws-number
+*/
+
+.news-number,
+.newws-number {
+    width: 22px;
+
+    height: 22px;
+
+    min-width: 22px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #011213;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-top: 4px;
+}
+
+.news-item p {
+    color: #47616b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+.news-item strong {
+    color: #394f58;
+}
+
+
+/* =========================================
+   NEWS LINK
+========================================= */
+
+.news-link {
+    color: #e60707;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    display: inline-flex;
+
+    gap: 9px;
+
+    align-items: center;
+
+    margin-top: 5px;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+
+/*
+   Keep your existing mission-link
+   working if the HTML uses it.
+*/
+
+.news-content .news-link {
+    color: rgb(235, 10, 10);
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    display: inline-flex;
+
+    gap: 9px;
+
+    align-items: center;
+
+    margin-top: 5px;
+}
+
+.news-content .news-link:hover {
+    text-decoration: underline;
+}
+
+.news-article {
+    width: 100%;
+
+    height: auto;
+
+    max-height: none;
+
+    overflow: visible;
+}
+
+
+.news-article.expanded {
+    height: auto;
+
+    max-height: none;
+
+    overflow: visible;
+}
+
+
+.news-article p {
+    color: #47616b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   SHOW MORE / SHOW LESS BUTTONS
+========================================= */
+
+.show-more,
+.show-less {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    border: none;
+
+    background: #08b8bd;
+
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.show-more:hover,
+.show-less:hover {
+    background: #069da2;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
    PILLARS
 ========================================= */
 
@@ -462,16 +783,23 @@ section {
 
 .pillar-image {
     width: 100%;
+
     height: 330px;
+
     overflow: hidden;
+
     border-radius: 15px;
+
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .pillar-image img {
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     display: block;
 }
 
@@ -517,6 +845,7 @@ section {
 
 .pillar-number {
     width: 22px;
+
     height: 22px;
 
     flex-shrink: 0;
@@ -568,6 +897,8 @@ section {
 .mission-link:hover {
     text-decoration: underline;
 }
+
+
 /* =========================================
    FOOTER
 ========================================= */
@@ -698,37 +1029,56 @@ section {
     margin-left: 24px;
 }
 
+
 /* SOCIAL MEDIA ICONS */
+
 .footer-social-icons {
     display: flex !important;
+
     flex-direction: row !important;
+
     flex-wrap: nowrap !important;
+
     align-items: center;
+
     justify-content: flex-start;
+
     gap: 10px;
+
     width: max-content;
+
     max-width: 100%;
+
     margin-top: 10px;
+
     padding: 0;
 }
 
 .footer-social-icons a {
     display: flex !important;
+
     align-items: center;
+
     justify-content: center;
 
     width: 36px !important;
+
     height: 36px !important;
+
     min-width: 36px !important;
+
     max-width: 36px !important;
 
     flex: 0 0 36px !important;
 
     border-radius: 50%;
+
     background: #08b8bd;
+
     color: #ffffff;
 
     text-decoration: none;
+
     font-size: 17px;
 
     transition: 0.3s ease;
@@ -736,13 +1086,18 @@ section {
 
 .footer-social-icons a:hover {
     background: #ffffff;
+
     color: #08b8bd;
+
     transform: translateY(-3px);
 }
 
-/* Make sure the icons stay directly below the phone numbers */
+
+/* Make sure icons stay directly below phone numbers */
+
 .footer-contact .footer-social-icons {
     margin-left: 0;
+
     margin-right: 0;
 }
 
@@ -782,15 +1137,36 @@ section {
 
 @media (max-width: 900px) {
 
+    /* Navigation */
+
     .nav-links {
         gap: 14px;
 
         font-size: 16px;
     }
 
+
+    /* Programs */
+
     .program-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    /* NEWS */
+
+    .news-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .news-image {
+        height: 350px;
+    }
+
+
+    /* Pillars */
 
     .pillars-container {
         grid-template-columns: 1fr;
@@ -801,6 +1177,9 @@ section {
     .pillar-image {
         height: 350px;
     }
+
+
+    /* Footer */
 
     .footer-container {
         grid-template-columns: 1fr 1fr;
@@ -846,6 +1225,7 @@ section {
         padding: 7px 13px;
     }
 
+
     /* Hero */
 
     .hero {
@@ -884,6 +1264,49 @@ section {
 
     .program-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    /* NEWS */
+
+    .news {
+        padding: 70px 0;
+    }
+
+    .news-container {
+        width: min(92%, 600px);
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .news-image {
+        height: 280px;
+
+        border-radius: 15px;
+    }
+
+    .news-content h2 {
+        font-size: 30px;
+    }
+
+    .news-intro {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .news-item {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .news-item p {
+        font-size: 16px;
+
+        line-height: 1.7;
     }
 
 
@@ -937,9 +1360,14 @@ section {
 
 @media (max-width: 450px) {
 
+    /* Hero */
+
     .hero h1 {
         font-size: 34px;
     }
+
+
+    /* Statistics */
 
     .stats-container {
         grid-template-columns: 1fr 1fr;
@@ -949,9 +1377,39 @@ section {
         font-size: 31px;
     }
 
+
+    /* General headings */
+
     .section-heading h2,
     .pillar-content h2,
+    .news-content h2,
     .donation h2 {
         font-size: 28px;
+    }
+
+
+    /* NEWS */
+
+    .news {
+        padding: 60px 0;
+    }
+
+    .news-image {
+        height: 230px;
+    }
+
+    .news-intro {
+        font-size: 15px;
+    }
+
+    .news-item p {
+        font-size: 15px;
+    }
+
+
+    /* Pillars */
+
+    .pillar-image {
+        height: 240px;
     }
 }
