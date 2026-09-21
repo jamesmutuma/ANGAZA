@@ -510,7 +510,7 @@ section {
 .news-image {
     width: 360px;
 
-    height: 450px;
+    height: 470px;
 
     overflow: hidden;
 
@@ -633,7 +633,7 @@ section {
 ========================================= */
 
 .news-link {
-    color: #e60707;
+    color: turquoise;
 
     font-size: 17px;
 
@@ -659,7 +659,7 @@ section {
 */
 
 .news-content .news-link {
-    color: rgb(235, 10, 10);
+    color: turquoise;
 
     font-size: 17px;
 
