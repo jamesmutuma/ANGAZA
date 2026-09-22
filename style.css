@@ -69,24 +69,25 @@ section {
 }
 
 
-/* Logo */
+/* =========================================
+   LOGO
+========================================= */
 
 .logo {
     display: flex;
-
-    align-items: left;
+    align-items: center;
 }
 
 .logo img {
     width: 90px;
-
     height: auto;
-
     display: block;
 }
 
 
-/* Navigation Links */
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
 
 .nav-links {
     display: flex;
@@ -112,9 +113,6 @@ section {
     color: #08b8bd;
 }
 
-
-/* Current page */
-
 .nav-links a.active {
     color: #08b8bd;
 
@@ -122,7 +120,9 @@ section {
 }
 
 
-/* Donate button */
+/* =========================================
+   DONATE BUTTON
+========================================= */
 
 .nav-donate {
     background: #df0923;
@@ -143,24 +143,47 @@ section {
 }
 
 
-/* Admin button */
+/* =========================================
+   HAMBURGER BUTTON
+========================================= */
 
-.nav-admin {
-    background: rgb(212, 52, 52);
+.nav-toggle {
+    display: none;
 
-    color: white !important;
+    width: 42px;
+    height: 42px;
 
-    padding: 9px 18px;
+    background: transparent;
 
-    border-radius: 8px;
+    border: none;
 
-    font-weight: 600;
+    cursor: pointer;
 
-    transition: background 0.2s ease;
+    padding: 7px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
 }
 
-.nav-admin:hover {
-    background: #000080;
+.hamburger {
+    display: block;
+
+    width: 27px;
+    height: 3px;
+
+    background: #444444;
+
+    border-radius: 3px;
+
+    transition: all 0.3s ease;
+}
+
+.nav-toggle:hover .hamburger {
+    background: #08b8bd;
 }
 
 
@@ -197,9 +220,6 @@ section {
 
     background: rgba(0, 0, 0, 0.45);
 }
-
-
-/* Hero content */
 
 .hero-content {
     position: relative;
@@ -258,9 +278,6 @@ section {
 
     margin-bottom: 29px;
 }
-
-
-/* Hero buttons */
 
 .hero-buttons {
     display: flex;
@@ -372,9 +389,6 @@ section {
     margin: auto;
 }
 
-
-/* Section heading */
-
 .section-heading {
     text-align: center;
 
@@ -398,7 +412,9 @@ section {
 }
 
 
-/* Program cards */
+/* =========================================
+   PROGRAM CARDS
+========================================= */
 
 .program-grid {
     display: grid;
@@ -427,11 +443,9 @@ section {
 .program-card:hover {
     transform: translateY(-4px);
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.07);
 }
-
-
-/* Icons */
 
 .program-icon {
     width: 43px;
@@ -480,14 +494,6 @@ section {
     padding: 100px 0;
 }
 
-
-/*
-   Main news container
-
-   This follows the same layout as
-   the Three Pillars section.
-*/
-
 .news-container {
     width: min(1060px, 92%);
 
@@ -502,11 +508,6 @@ section {
     gap: 43px;
 }
 
-
-/* =========================================
-   NEWS IMAGE
-========================================= */
-
 .news-image {
     width: 360px;
 
@@ -516,7 +517,8 @@ section {
 
     border-radius: 15px;
 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .news-image img {
@@ -528,11 +530,6 @@ section {
 
     display: block;
 }
-
-
-/* =========================================
-   NEWS CONTENT
-========================================= */
 
 .news-content {
     width: 100%;
@@ -560,11 +557,6 @@ section {
     margin-bottom: 22px;
 }
 
-
-/* =========================================
-   NEWS ITEMS
-========================================= */
-
 .news-item {
     display: flex;
 
@@ -576,13 +568,6 @@ section {
 
     width: 100%;
 }
-
-
-/*
-   Supports both:
-   .news-number
-   and the old .newws-number
-*/
 
 .news-number,
 .newws-number {
@@ -627,13 +612,8 @@ section {
     color: #394f58;
 }
 
-
-/* =========================================
-   NEWS LINK
-========================================= */
-
 .news-link {
-    color: turquoise;
+    color:  #08aeb3;
 
     font-size: 17px;
 
@@ -651,12 +631,6 @@ section {
 .news-link:hover {
     text-decoration: underline;
 }
-
-
-/*
-   Keep your existing mission-link
-   working if the HTML uses it.
-*/
 
 .news-content .news-link {
     color: turquoise;
@@ -688,7 +662,6 @@ section {
     overflow: visible;
 }
 
-
 .news-article.expanded {
     height: auto;
 
@@ -696,7 +669,6 @@ section {
 
     overflow: visible;
 }
-
 
 .news-article p {
     color: #47616b;
@@ -753,6 +725,507 @@ section {
     transform: translateY(-1px);
 }
 
+/* =========================================================
+   CEO / FOUNDER SECTION
+========================================================= */
+
+.ceo-section {
+    background:  #ffffff;
+
+    padding: 100px 0;
+}
+
+
+.ceo-container {
+    width: min(1060px, 92%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+.ceo-image {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 360px;
+
+    margin: 0 auto;
+}
+
+
+.ceo-image::before {
+    content: "";
+
+    position: absolute;
+
+    left: -12px;
+
+    bottom: -12px;
+
+    width: 78%;
+
+    height: 78%;
+
+    border: 2px solid #08b8bd;
+
+    border-radius: 5px;
+
+    z-index: 0;
+}
+
+
+.ceo-image img {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.ceo-content {
+    width: 100%;
+
+    max-width: 620px;
+}
+
+
+.ceo-label {
+    display: inline-block;
+
+    color: #df0923;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 16px;
+}
+
+
+.ceo-content h2 {
+    color: #111111;
+
+    font-size: 38px;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+
+.ceo-content p {
+    color: #47616b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.ceo-signature {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 24px;
+
+    margin-bottom: 24px;
+}
+
+
+.ceo-signature strong {
+    color: #111111;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+}
+
+
+.ceo-signature span {
+    color: #08aeb3;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.ceo-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 18px;
+
+    background: #069da2;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.ceo-button:hover {
+    background: turquoise;
+
+    transform: translateY(-1px);
+}
+
+
+.ceo-button i {
+    transition: transform 0.2s ease;
+}
+
+
+.ceo-button:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   MERCHANDISE PREVIEW
+========================================================= */
+
+.home-merchandise {
+    background: #f5f4f4;
+
+    padding: 100px 0;
+}
+
+
+.home-merchandise-container {
+    width: min(1060px, 92%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+.merchandise-intro {
+    width: 100%;
+
+    max-width: 540px;
+}
+
+
+.merchandise-label {
+    display: inline-block;
+
+    color: #df0923;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 16px;
+}
+
+
+.merchandise-intro h2 {
+    color: #111111;
+
+    font-size: 38px;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+
+.merchandise-intro p {
+    color: #47616b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.merchandise-arrow-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 10px;
+
+    color: #08aeb3;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.merchandise-arrow-button i {
+    width: 39px;
+
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: #08b8bd;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.merchandise-arrow-button:hover i {
+    background: #069da2;
+
+    transform: translateX(4px);
+}
+
+
+.merchandise-preview-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.merchandise-preview-card {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    height: 215px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #e3eeee;
+}
+
+
+.merchandise-preview-card img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+.merchandise-preview-card:hover img {
+    transform: scale(1.04);
+}
+
+
+.merchandise-preview-overlay {
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding: 35px 18px 15px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.75)
+        );
+
+    color: #ffffff;
+}
+
+
+.merchandise-preview-overlay span {
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PARTNERS
+========================================================= */
+
+.partners-section {
+    background: #ffffff;
+
+    padding: 90px 0;
+}
+
+
+.partners-container {
+    width: min(1060px, 92%);
+
+    margin: auto;
+}
+
+
+.partners-header {
+    text-align: center;
+
+    max-width: 620px;
+
+    margin: 0 auto 45px;
+}
+
+
+.partners-header span {
+    display: inline-block;
+
+    color: #08b8bd;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+
+.partners-header h2 {
+    font-size: 36px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+
+.partners-header p {
+    color: #536577;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.partners-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+
+.partner-logo {
+    height: 115px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #cbdde0;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.partner-logo:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+.partner-logo img {
+    max-width: 100%;
+
+    max-height: 72px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
 
 /* =========================================
    PILLARS
@@ -778,9 +1251,6 @@ section {
     gap: 43px;
 }
 
-
-/* Image */
-
 .pillar-image {
     width: 100%;
 
@@ -790,7 +1260,8 @@ section {
 
     border-radius: 15px;
 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .pillar-image img {
@@ -802,9 +1273,6 @@ section {
 
     display: block;
 }
-
-
-/* Pillar content */
 
 .pillar-content h2 {
     font-size: 38px;
@@ -821,9 +1289,6 @@ section {
 
     margin-bottom: 22px;
 }
-
-
-/* Pillar list */
 
 .pillar-list {
     display: flex;
@@ -877,9 +1342,6 @@ section {
     color: #394f58;
 }
 
-
-/* Mission link */
-
 .mission-link {
     color: black;
 
@@ -927,9 +1389,6 @@ section {
     padding-bottom: 70px;
 }
 
-
-/* Footer logo */
-
 .footer-logo {
     display: flex;
 
@@ -956,9 +1415,6 @@ section {
     line-height: 1.8;
 }
 
-
-/* Footer headings */
-
 .footer h3 {
     font-family: "Playfair Display", serif;
 
@@ -966,9 +1422,6 @@ section {
 
     margin-bottom: 20px;
 }
-
-
-/* Quick links */
 
 .footer-link-columns {
     display: grid;
@@ -998,9 +1451,6 @@ section {
     color: #08b8bd;
 }
 
-
-/* Contact */
-
 .footer-contact p {
     display: flex;
 
@@ -1028,9 +1478,6 @@ section {
 .phone-indent {
     margin-left: 24px;
 }
-
-
-/* SOCIAL MEDIA ICONS */
 
 .footer-social-icons {
     display: flex !important;
@@ -1092,17 +1539,11 @@ section {
     transform: translateY(-3px);
 }
 
-
-/* Make sure icons stay directly below phone numbers */
-
 .footer-contact .footer-social-icons {
     margin-left: 0;
 
     margin-right: 0;
 }
-
-
-/* Footer bottom */
 
 .footer-bottom {
     width: min(1060px, 92%);
@@ -1132,28 +1573,22 @@ section {
 
 
 /* =========================================
-   RESPONSIVE DESIGN
+   TABLETS
 ========================================= */
 
 @media (max-width: 900px) {
 
-    /* Navigation */
-
     .nav-links {
         gap: 14px;
 
-        font-size: 16px;
+        font-size: 13px;
     }
 
-
-    /* Programs */
 
     .program-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
-    /* NEWS */
 
     .news-container {
         grid-template-columns: 1fr;
@@ -1161,12 +1596,17 @@ section {
         gap: 35px;
     }
 
+
     .news-image {
+        width: 100%;
+
+        max-width: 500px;
+
         height: 350px;
+
+        margin: auto;
     }
 
-
-    /* Pillars */
 
     .pillars-container {
         grid-template-columns: 1fr;
@@ -1174,12 +1614,62 @@ section {
         gap: 35px;
     }
 
+
     .pillar-image {
         height: 350px;
     }
 
 
-    /* Footer */
+    /* CEO */
+
+    .ceo-container {
+        grid-template-columns: 300px 1fr;
+
+        gap: 45px;
+    }
+
+
+    .ceo-image img {
+        height: 400px;
+    }
+
+
+    .ceo-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* Partners */
+
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Merchandise */
+
+    .home-merchandise-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .merchandise-intro {
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    .merchandise-preview-grid {
+        max-width: 700px;
+
+        margin: auto;
+    }
+
 
     .footer-container {
         grid-template-columns: 1fr 1fr;
@@ -1187,67 +1677,158 @@ section {
         gap: 45px;
     }
 
+
     .footer-contact {
         grid-column: span 2;
     }
+
 }
 
 
+/* =========================================
+   MOBILE PHONES
+========================================= */
+
 @media (max-width: 700px) {
 
-    /* Navigation */
+    /* -----------------------------------------
+       MOBILE NAVIGATION
+    ----------------------------------------- */
 
     .navbar {
-        height: auto;
-
-        min-height: 65px;
+        height: 65px;
     }
 
+
     .nav-container {
-        padding: 12px 0;
+        width: 92%;
+
+        height: 65px;
+
+        flex-direction: row;
+
+        padding: 0;
+
+        gap: 0;
+    }
+
+
+    .logo img {
+        width: 82px;
+    }
+
+
+    .nav-toggle {
+        display: flex;
+    }
+
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        border-top: 1px solid #eeeeee;
+
+        border-bottom: 1px solid #eeeeee;
+
+        box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.08);
 
         flex-direction: column;
 
-        gap: 12px;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 0;
+
+        font-size: 15px;
     }
 
-    .nav-links {
+
+    .nav-links.nav-links-visible {
+        display: flex;
+    }
+
+
+    .nav-links a {
         width: 100%;
 
-        justify-content: center;
+        padding: 12px 25px;
 
-        flex-wrap: wrap;
+        text-align: center;
 
-        gap: 12px 16px;
-    }
-
-    .nav-donate {
-        padding: 7px 13px;
+        color: #444444;
     }
 
 
-    /* Hero */
+    .nav-links a:hover {
+        background: #f5fafa;
+
+        color: #08b8bd;
+    }
+
+
+    .nav-links a.active {
+        color: #08b8bd;
+
+        background: #f5fafa;
+    }
+
+
+    .nav-links .nav-donate {
+        width: fit-content;
+
+        align-self: center;
+
+        margin: 8px auto 5px;
+
+        padding: 9px 22px;
+    }
+
+
+    /* -----------------------------------------
+       HERO
+    ----------------------------------------- */
 
     .hero {
         min-height: 700px;
 
-        padding-top: 130px;
+        padding-top: 100px;
     }
+
 
     .hero h1 {
         font-size: 40px;
+
+        line-height: 1.35;
     }
+
 
     .hero p {
         font-size: 14px;
+
+        line-height: 1.7;
     }
+
 
     .hero-buttons {
         flex-wrap: wrap;
     }
 
 
-    /* Statistics */
+    /* -----------------------------------------
+       STATISTICS
+    ----------------------------------------- */
 
     .stats-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1255,23 +1836,29 @@ section {
         row-gap: 35px;
     }
 
+
     .stat h2 {
         font-size: 36px;
     }
 
 
-    /* Programs */
+    /* -----------------------------------------
+       PROGRAMS
+    ----------------------------------------- */
 
     .program-grid {
         grid-template-columns: 1fr;
     }
 
 
-    /* NEWS */
+    /* -----------------------------------------
+       NEWS
+    ----------------------------------------- */
 
     .news {
         padding: 70px 0;
     }
+
 
     .news-container {
         width: min(92%, 600px);
@@ -1281,15 +1868,20 @@ section {
         gap: 30px;
     }
 
+
     .news-image {
+        width: 100%;
+
         height: 280px;
 
         border-radius: 15px;
     }
 
+
     .news-content h2 {
         font-size: 30px;
     }
+
 
     .news-intro {
         font-size: 16px;
@@ -1297,11 +1889,13 @@ section {
         line-height: 1.7;
     }
 
+
     .news-item {
         align-items: flex-start;
 
         gap: 10px;
     }
+
 
     .news-item p {
         font-size: 16px;
@@ -1310,33 +1904,256 @@ section {
     }
 
 
-    /* Pillars */
+    /* -----------------------------------------
+       PILLARS
+    ----------------------------------------- */
 
     .pillars {
         padding: 70px 0;
     }
+
 
     .pillar-image {
         height: 280px;
     }
 
 
-    /* Donation */
+    /* =====================================================
+       CEO - MOBILE
+    ===================================================== */
 
-    .donation {
-        padding: 75px 20px;
-    }
-
-    .donation h2 {
-        font-size: 28px;
-    }
-
-    .donation-buttons {
-        flex-wrap: wrap;
+    .ceo-section {
+        padding: 70px 0;
     }
 
 
-    /* Footer */
+    .ceo-container {
+        width: min(92%, 600px);
+
+        grid-template-columns: 1fr;
+
+        gap: 42px;
+    }
+
+
+    .ceo-image {
+        width: min(100%, 340px);
+
+        max-width: 340px;
+
+        margin: 0 auto;
+    }
+
+
+    .ceo-image img {
+        width: 100%;
+
+        height: 390px;
+
+        border-radius: 12px;
+    }
+
+
+    .ceo-image::before {
+        left: -9px;
+
+        bottom: -9px;
+
+        width: 78%;
+
+        height: 78%;
+    }
+
+
+    .ceo-content {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+
+    .ceo-label {
+        font-size: 13px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .ceo-content h2 {
+        font-size: 30px;
+
+        line-height: 1.3;
+
+        margin-bottom: 17px;
+    }
+
+
+    .ceo-content p {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    .ceo-signature {
+        margin-top: 22px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .ceo-button {
+        font-size: 14px;
+
+        padding: 11px 17px;
+    }
+
+
+    /* =====================================================
+       PARTNERS - MOBILE
+    ===================================================== */
+
+    .partners-section {
+        padding: 70px 0;
+    }
+
+
+    .partners-container {
+        width: min(92%, 600px);
+    }
+
+
+    .partners-header {
+        margin-bottom: 35px;
+    }
+
+
+    .partners-header h2 {
+        font-size: 30px;
+
+        line-height: 1.3;
+    }
+
+
+    .partners-header p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+    }
+
+
+    .partner-logo {
+        height: 105px;
+
+        padding: 15px;
+
+        border-radius: 9px;
+    }
+
+
+    .partner-logo img {
+        max-height: 65px;
+    }
+
+
+    /* =====================================================
+       MERCHANDISE - MOBILE
+    ===================================================== */
+
+    .home-merchandise {
+        padding: 70px 0;
+    }
+
+
+    .home-merchandise-container {
+        width: min(92%, 600px);
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .merchandise-intro {
+        width: 100%;
+
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+
+    .merchandise-label {
+        font-size: 13px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .merchandise-intro h2 {
+        font-size: 30px;
+
+        line-height: 1.3;
+
+        margin-bottom: 17px;
+    }
+
+
+    .merchandise-intro p {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    .merchandise-arrow-button {
+        font-size: 14px;
+
+        margin-top: 8px;
+    }
+
+
+    .merchandise-preview-grid {
+        width: 100%;
+
+        max-width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+    }
+
+
+    .merchandise-preview-card {
+        height: 185px;
+
+        border-radius: 10px;
+    }
+
+
+    .merchandise-preview-overlay {
+        padding:
+            30px
+            13px
+            12px;
+    }
+
+
+    .merchandise-preview-overlay span {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       FOOTER
+    ----------------------------------------- */
 
     .footer-container {
         grid-template-columns: 1fr;
@@ -1344,9 +2161,11 @@ section {
         gap: 40px;
     }
 
+
     .footer-contact {
         grid-column: auto;
     }
+
 
     .footer-bottom {
         flex-direction: column;
@@ -1355,8 +2174,13 @@ section {
 
         gap: 10px;
     }
+
 }
 
+
+/* =========================================
+   SMALL MOBILE PHONES
+========================================= */
 
 @media (max-width: 450px) {
 
@@ -1373,6 +2197,7 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 
+
     .stat h2 {
         font-size: 31px;
     }
@@ -1388,19 +2213,22 @@ section {
     }
 
 
-    /* NEWS */
+    /* News */
 
     .news {
         padding: 60px 0;
     }
 
+
     .news-image {
         height: 230px;
     }
 
+
     .news-intro {
         font-size: 15px;
     }
+
 
     .news-item p {
         font-size: 15px;
@@ -1412,4 +2240,143 @@ section {
     .pillar-image {
         height: 240px;
     }
+
+
+    /* Mobile navigation */
+
+    .nav-links a {
+        padding: 11px 20px;
+    }
+
+
+    .nav-links {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       CEO - SMALL PHONES
+    ===================================================== */
+
+    .ceo-section {
+        padding: 60px 0;
+    }
+
+
+    .ceo-container {
+        width: 92%;
+
+        gap: 35px;
+    }
+
+
+    .ceo-image {
+        width: min(100%, 300px);
+    }
+
+
+    .ceo-image img {
+        height: 350px;
+    }
+
+
+    .ceo-content h2 {
+        font-size: 28px;
+    }
+
+
+    .ceo-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       PARTNERS - SMALL PHONES
+    ===================================================== */
+
+    .partners-section {
+        padding: 60px 0;
+    }
+
+
+    .partners-header h2 {
+        font-size: 28px;
+    }
+
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .partner-logo {
+        height: 90px;
+
+        padding: 10px;
+    }
+
+
+    .partner-logo img {
+        max-height: 55px;
+    }
+
+
+    /* =====================================================
+       MERCHANDISE - SMALL PHONES
+    ===================================================== */
+
+    .home-merchandise {
+        padding: 60px 0;
+    }
+
+
+    .home-merchandise-container {
+        width: 92%;
+
+        gap: 35px;
+    }
+
+
+    .merchandise-intro h2 {
+        font-size: 28px;
+    }
+
+
+    .merchandise-intro p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .merchandise-preview-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .merchandise-preview-card {
+        height: 155px;
+
+        border-radius: 8px;
+    }
+
+
+    .merchandise-preview-overlay {
+        padding:
+            25px
+            10px
+            9px;
+    }
+
+
+    .merchandise-preview-overlay span {
+        font-size: 12px;
+    }
+
 }

@@ -1,308 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Angaza Wellness Foundation</title>
 
     <meta name="description"
-      content="Discover Angaza Wellness Foundation's mission to promote mental wellness, strengthen communities, empower individuals, and create meaningful social impact.">
+        content="Discover Angaza Wellness Foundation's mission to promote mental wellness, strengthen communities, empower individuals, and create meaningful social impact.">
 
-      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
 
-    <!-- Your existing header/navbar CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
 
-    <!-- Mission page CSS -->
-    <link rel="stylesheet" href="mission.css">
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="apple-touch-icon.png">
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="favicon-32x32.png">
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="favicon-16x16.png">
+
+    <link
+        rel="manifest"
+        href="site.webmanifest">
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+
+    <!-- Mission Page CSS -->
+
+    <link
+        rel="stylesheet"
+        href="mission.css">
+
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
+
 <body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
     <header class="navbar">
 
         <div class="nav-container">
 
-           <a href="#home" class="logo">
-    <img src="ANGAZA_LOGO.jpeg" alt="Angaza Wellness">
-</a>
 
-            <nav class="nav-links">
+            <!-- LOGO -->
 
-                <a href="index.html">Home</a>
+            <a
+                href="index.html"
+                class="logo">
 
-                <a href="about.html">About</a>
+                <img
+                    src="AngazamainlogoPNG.png"
+                    alt="Angaza Wellness">
 
-                <a href="mission.html" class="active">Mission</a>
+            </a>
 
-                <a href="program.html">Programs</a>
 
-                <a href="team.html">Team</a>
 
-                <a href="testimonials.html">Testimonials</a>
+            <!-- NAVIGATION LINKS -->
 
-                <a href="#partners.html">Partners</a>
+            <!--
+                Keep the class "nav-links" because it is already
+                used by your style.css.
 
-                <a href="gallery.html">Gallery</a>
+                The id "navLinks" is added for the hamburger
+                JavaScript.
+            -->
 
-                <a href="blog.html">Blog</a>
+            <nav
+                class="nav-links"
+                id="navLinks">
 
-                <a href="contact.html">Contact</a>
 
-               <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20am%20inspired%20by%20the%20work%20you%20are%20doing%20to%20promote%20wellness%20and%20strengthen%20our%20communities.%20I%20would%20like%20to%20make%20a%20donation%20to%20support%20your%20work.%20Please%20guide%20me%20on%20how%20I%20can%20make%20my%20contribution."
-   class="nav-donate"
-   target="_blank">
+                <a href="index.html">
+                    Home
+                </a>
 
-    Donate
 
-</a>
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a
+                    href="mission.html"
+                    class="active">
+
+                    Mission
+
+                </a>
+
+
+                <a href="program.html">
+                    Programs
+                </a>
+
+
+                <a href="team.html">
+                    Team
+                </a>
+
+
+                <a href="testimonials.html">
+                    Testimonials
+                </a>
+
+
+                <a href="merchandise.html">
+                    Merchandise
+                </a>
+
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+
+
+                <!-- DONATE -->
+
+                <a
+                    href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20am%20inspired%20by%20the%20work%20you%20are%20doing%20to%20promote%20wellness%20and%20strengthen%20our%20communities.%20I%20would%20like%20to%20make%20a%20donation%20to%20support%20your%20work.%20Please%20guide%20me%20on%20how%20I%20can%20make%20my%20contribution."
+                    class="nav-donate"
+                    target="_blank">
+
+                    Donate
+
+                </a>
+
+
             </nav>
+
+
+
+            <!-- ================= HAMBURGER ================= -->
+
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                <span class="hamburger"></span>
+
+                <span class="hamburger"></span>
+
+                <span class="hamburger"></span>
+
+            </button>
+
 
         </div>
 
     </header>
 
-<main class="mission-page">
-
-    <!-- Mission Hero Section -->
-    <section class="mission-hero">
-
-        <div class="mission-hero-content">
-            <h1>Our Mission</h1>
-
-            <p>
-                To illuminate mental wellness, empower communities, and mentor
-                the next generation — through Education, Advocacy, and Mentorship.
-            </p>
-        </div>
-
-    </section>
 
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision">
+    <!-- ================= MAIN CONTENT ================= -->
 
-        <div class="mission-vision-container">
+    <main class="mission-page">
 
-            <!-- Our Mission -->
-            <div class="mission-content">
 
-                <h2>Our Mission</h2>
+        <!-- ================= MISSION HERO ================= -->
+
+        <section class="mission-hero">
+
+            <div class="mission-hero-content">
+
+                <h1>
+                    Our Mission
+                </h1>
 
                 <p>
-                    To promote mental wellness by providing accessible mental
-                    health education, psychosocial support, counselling,
-                    mentorship, advocacy, and community empowerment programs
-                    that build resilient individuals and communities.
-                </p>
-
-                <p>
-                    We believe that everyone deserves access to compassionate
-                    mental health support regardless of their background —
-                    and we live that belief out by
-                    <em>Doing Life Together</em> with the people we serve.
+                    To illuminate mental wellness, empower communities,
+                    and mentor the next generation — through Education,
+                    Advocacy, and Mentorship.
                 </p>
 
             </div>
 
+        </section>
 
-            <!-- Our Vision -->
-            <div class="vision-content">
 
-                <h2>Our Vision</h2>
 
-                <p>
-                    A society where every individual enjoys positive mental
-                    health, emotional well-being, and the opportunity to thrive.
-                </p>
+        <!-- ================= MISSION & VISION ================= -->
 
-                <p>
-                    We envision communities where seeking help is a sign of
-                    strength, where stigma has no home, and where every
-                    generation is empowered to flourish.
-                </p>
+        <section class="mission-vision">
+
+            <div class="mission-vision-container">
+
+
+                <!-- OUR MISSION -->
+
+                <div class="mission-content">
+
+                    <h2>
+                        Our Mission
+                    </h2>
+
+                    <p>
+                        To promote mental wellness by providing accessible
+                        mental health education, psychosocial support,
+                        counselling, mentorship, advocacy, and community
+                        empowerment programs that build resilient individuals
+                        and communities.
+                    </p>
+
+                    <p>
+                        We believe that everyone deserves access to compassionate
+                        mental health support regardless of their background —
+                        and we live that belief out by
+                        <em>Doing Life Together</em>
+                        with the people we serve.
+                    </p>
+
+                </div>
+
+
+
+                <!-- OUR VISION -->
+
+                <div class="vision-content">
+
+                    <h2>
+                        Our Vision
+                    </h2>
+
+                    <p>
+                        A society where every individual enjoys positive mental
+                        health, emotional well-being, and the opportunity to thrive.
+                    </p>
+
+                    <p>
+                        We envision communities where seeking help is a sign of
+                        strength, where stigma has no home, and where every
+                        generation is empowered to flourish.
+                    </p>
+
+                </div>
+
 
             </div>
 
-        </div>
-
-    </section>
-    <!-- Three Pillars Section -->
-    <section class="pillars-section">
-
-        <div class="pillars-container">
-
-            <div class="section-heading">
-                <h2>Our three pillars</h2>
-
-                <p>
-                    Education, Advocacy, and Mentorship shape everything we do.
-                </p>
-            </div>
+        </section>
 
 
-            <div class="pillars-grid">
 
-                <!-- Education -->
-                <div class="pillar-card">
+        <!-- ================= THREE PILLARS ================= -->
 
-                    <h3>Education</h3>
+        <section class="pillars-section">
+
+            <div class="pillars-container">
+
+
+                <div class="section-heading">
+
+                    <h2>
+                        Our three pillars
+                    </h2>
 
                     <p>
-                        We educate individuals, schools, and communities on
-                        mental wellness, life skills, and healthy relationships.
+                        Education, Advocacy, and Mentorship shape everything we do.
                     </p>
 
                 </div>
 
 
-                <!-- Advocacy -->
-                <div class="pillar-card">
 
-                    <h3>Advocacy</h3>
-
-                    <p>
-                        We raise our voice for mental health awareness, break
-                        stigma, and push for accessible care for all.
-                    </p>
-
-                </div>
+                <div class="pillars-grid">
 
 
-                <!-- Mentorship -->
-                <div class="pillar-card">
+                    <!-- EDUCATION -->
 
-                    <h3>Mentorship</h3>
+                    <div class="pillar-card">
 
-                    <p>
-                        We walk with young people, offering guidance, presence,
-                        and wisdom as they grow into their potential.
-                    </p>
+                        <h3>
+                            Education
+                        </h3>
 
-                </div>
+                        <p>
+                            We educate individuals, schools, and communities on
+                            mental wellness, life skills, and healthy relationships.
+                        </p>
 
-            </div>
-
-        </div>
-
-    </section>
+                    </div>
 
 
-    <!-- Strategic Objectives Section -->
-    <section class="objectives-section">
 
-        <div class="objectives-container">
+                    <!-- ADVOCACY -->
 
-            <div class="section-heading">
+                    <div class="pillar-card">
 
-                <h2>What we are working toward</h2>
+                        <h3>
+                            Advocacy
+                        </h3>
 
-                <p>
-                    Our strategic objectives keep us focused on impact, equity,
-                    and sustainability.
-                </p>
+                        <p>
+                            We raise our voice for mental health awareness, break
+                            stigma, and push for accessible care for all.
+                        </p>
 
-            </div>
-
-
-            <div class="objectives-list">
-
-                <!-- Objective 1 -->
-                <div class="objective-item">
-
-                    <span class="objective-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-
-                    <p>
-                        Expand access to counselling and psychosocial support
-                        in schools, workplaces, and communities.
-                    </p>
-
-                </div>
+                    </div>
 
 
-                <!-- Objective 2 -->
-                <div class="objective-item">
 
-                    <span class="objective-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </span>
+                    <!-- MENTORSHIP -->
 
-                    <p>
-                        Create safe spaces where people can connect, vent,
-                        and be heard without stigma.
-                    </p>
+                    <div class="pillar-card">
 
-                </div>
+                        <h3>
+                            Mentorship
+                        </h3>
 
+                        <p>
+                            We walk with young people, offering guidance, presence,
+                            and wisdom as they grow into their potential.
+                        </p>
 
-                <!-- Objective 3 -->
-                <div class="objective-item">
+                    </div>
 
-                    <span class="objective-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-
-                    <p>
-                        Equip young people with practical mental wellness,
-                        life skills, and leadership tools.
-                    </p>
-
-                </div>
-
-
-                <!-- Objective 4 -->
-                <div class="objective-item">
-
-                    <span class="objective-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-
-                    <p>
-                        Strengthen families, schools, and communities through
-                        mental health education and advocacy.
-                    </p>
-
-                </div>
-
-
-                <!-- Objective 5 -->
-                <div class="objective-item">
-
-                    <span class="objective-icon">
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-
-                    <p>
-                        Build sustainable partnerships that advance mental
-                        health awareness, inclusion, and access to care.
-                    </p>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-</main>
-  <div id="footer"></div>
+
+        <!-- ================= STRATEGIC OBJECTIVES ================= -->
+
+        <section class="objectives-section">
+
+            <div class="objectives-container">
+
+
+                <div class="section-heading">
+
+                    <h2>
+                        What we are working toward
+                    </h2>
+
+                    <p>
+                        Our strategic objectives keep us focused on impact,
+                        equity, and sustainability.
+                    </p>
+
+                </div>
+
+
+
+                <div class="objectives-list">
+
+
+                    <!-- OBJECTIVE 1 -->
+
+                    <div class="objective-item">
+
+                        <span class="objective-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </span>
+
+                        <p>
+                            Expand access to counselling and psychosocial support
+                            in schools, workplaces, and communities.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OBJECTIVE 2 -->
+
+                    <div class="objective-item">
+
+                        <span class="objective-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </span>
+
+                        <p>
+                            Create safe spaces where people can connect, vent,
+                            and be heard without stigma.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OBJECTIVE 3 -->
+
+                    <div class="objective-item">
+
+                        <span class="objective-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </span>
+
+                        <p>
+                            Equip young people with practical mental wellness,
+                            life skills, and leadership tools.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OBJECTIVE 4 -->
+
+                    <div class="objective-item">
+
+                        <span class="objective-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </span>
+
+                        <p>
+                            Strengthen families, schools, and communities through
+                            mental health education and advocacy.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OBJECTIVE 5 -->
+
+                    <div class="objective-item">
+
+                        <span class="objective-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </span>
+
+                        <p>
+                            Build sustainable partnerships that advance mental
+                            health awareness, inclusion, and access to care.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div id="footer"></div>
 
     <script src="FOOTERSCRIPT.JS"></script>
 
+
+
+    <!-- ================= MOBILE NAVIGATION SCRIPT ================= -->
+
+    <script>
+
+        const navToggle = document.getElementById("navToggle");
+
+        const navLinks = document.getElementById("navLinks");
+
+
+        if (navToggle && navLinks) {
+
+
+            // OPEN / CLOSE MOBILE MENU
+
+            navToggle.addEventListener(
+                "click",
+                function () {
+
+                    navLinks.classList.toggle(
+                        "nav-links-visible"
+                    );
+
+
+                    const isOpen =
+                        navLinks.classList.contains(
+                            "nav-links-visible"
+                        );
+
+
+                    navToggle.setAttribute(
+                        "aria-expanded",
+                        isOpen
+                    );
+
+
+                    navToggle.setAttribute(
+                        "aria-label",
+                        isOpen
+                            ? "Close navigation menu"
+                            : "Open navigation menu"
+                    );
+
+                }
+            );
+
+
+
+            // CLOSE MENU AFTER CLICKING A LINK
+
+            const navigationItems =
+                navLinks.querySelectorAll("a");
+
+
+            navigationItems.forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            navLinks.classList.remove(
+                                "nav-links-visible"
+                            );
+
+
+                            navToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+
+                            navToggle.setAttribute(
+                                "aria-label",
+                                "Open navigation menu"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+        }
+
+    </script>
+
+
 </body>
+
 </html>

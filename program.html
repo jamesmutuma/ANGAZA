@@ -8,12 +8,12 @@
     <title>Angaza Wellness Foundation</title>
 
     <meta name="description"
-      content="Explore Angaza Wellness Foundation's programs supporting mental wellness, counselling, mentorship, advocacy, community outreach, and personal empowerment.">
+        content="Explore Angaza Wellness Foundation's programs supporting mental wellness, counselling, mentorship, advocacy, community outreach, and personal empowerment.">
 
-      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
@@ -25,7 +25,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -45,11 +46,11 @@
         <div class="nav-container">
 
             <a href="index.html" class="logo">
-                <img src="ANGAZA_LOGO.jpeg" alt="Angaza Wellness Foundation">
+                <img src="AngazamainlogoPNG.png" alt="Angaza Wellness Foundation">
             </a>
 
 
-            <nav class="nav-links">
+            <nav class="nav-links" id="navLinks">
 
                 <a href="index.html">Home</a>
 
@@ -63,7 +64,7 @@
 
                 <a href="testimonials.html">Testimonials</a>
 
-                <a href="#partners.html">Partners</a>
+                <a href="merchandise.html">Merchandise</a>
 
                 <a href="gallery.html">Gallery</a>
 
@@ -75,13 +76,32 @@
                 <!-- DONATE -->
 
                 <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20am%20inspired%20by%20the%20work%20you%20are%20doing%20to%20promote%20wellness%20and%20strengthen%20our%20communities.%20I%20would%20like%20to%20make%20a%20donation%20to%20support%20your%20work.%20Please%20guide%20me%20on%20how%20I%20can%20make%20my%20contribution."
-                   class="nav-donate"
-                   target="_blank">
+                    class="nav-donate"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     Donate
 
                 </a>
+
             </nav>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+
+            </button>
 
         </div>
 
@@ -355,8 +375,9 @@
                 </p>
 
                 <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20would%20like%20to%20book%20Corporate%20Wellness%20Training.%20Please%20guide%20me%20on%20the%20next%20steps."
-                   class="service-book-button"
-                   target="_blank">
+                    class="service-book-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     <i class="fa-brands fa-whatsapp"></i>
 
@@ -388,8 +409,9 @@
                 </p>
 
                 <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20would%20like%20to%20book%20a%20Counselling%20session.%20Please%20guide%20me%20on%20the%20next%20steps."
-                   class="service-book-button"
-                   target="_blank">
+                    class="service-book-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     <i class="fa-brands fa-whatsapp"></i>
 
@@ -421,8 +443,9 @@
                 </p>
 
                 <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20would%20like%20to%20book%20a%20Team%20Building%20session.%20Please%20guide%20me%20on%20the%20next%20steps."
-                   class="service-book-button"
-                   target="_blank">
+                    class="service-book-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     <i class="fa-brands fa-whatsapp"></i>
 
@@ -470,8 +493,9 @@
 
             <div class="delivery-image">
 
-                <img src="IMG_3906.jpg"
-                     alt="Angaza Wellness Foundation program">
+                <img
+                    src="IMG_3906.jpg"
+                    alt="Angaza Wellness Foundation program">
 
             </div>
 
@@ -547,6 +571,79 @@
                         "fa-solid fa-chevron-down";
 
                 }
+
+            });
+
+        }
+
+
+        // =====================================================
+        // MOBILE NAVIGATION
+        // =====================================================
+
+        const navToggle =
+            document.getElementById("navToggle");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        if (navToggle && navLinks) {
+
+            navToggle.addEventListener("click", function () {
+
+                navLinks.classList.toggle(
+                    "nav-links-visible"
+                );
+
+
+                const isOpen =
+                    navLinks.classList.contains(
+                        "nav-links-visible"
+                    );
+
+
+                navToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+
+                navToggle.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Close navigation menu"
+                        : "Open navigation menu"
+                );
+
+            });
+
+
+            const navigationItems =
+                navLinks.querySelectorAll("a");
+
+
+            navigationItems.forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navLinks.classList.remove(
+                        "nav-links-visible"
+                    );
+
+
+                    navToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+
+                    navToggle.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                });
 
             });
 

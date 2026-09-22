@@ -1,0 +1,648 @@
+/* =========================================================
+   MERCHANDISE PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    color: #17324d;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background: #ffffff;
+    z-index: 1000;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav-container {
+    width: min(1060px, 92%);
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    font-size: 13px;
+    color: #444444;
+}
+
+.nav-links a {
+    color: #444444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #08b8bd;
+}
+
+.nav-links a.active {
+    color: #08b8bd;
+    font-weight: 600;
+}
+
+.nav-donate {
+    background: #df0923;
+    color: #ffffff !important;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.merchandise-hero {
+    background: turquoise;
+    min-height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px 60px;
+}
+
+.merchandise-hero-content {
+    width: min(1060px, 92%);
+    margin: auto;
+}
+
+.merchandise-label {
+    display: inline-block;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.merchandise-hero h1 {
+    margin: 0 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+    line-height: 1.2;
+
+    color: white;
+}
+
+.merchandise-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: white;
+}
+
+
+/* =========================================================
+   MERCHANDISE SECTION
+   ========================================================= */
+
+.merchandise-section {
+    padding: 90px 20px 100px;
+    background: #ffffff;
+}
+
+.merchandise-container {
+    width: min(1060px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.merchandise-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.merchandise-header h2 {
+    margin: 0 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 36px;
+    line-height: 1.3;
+
+    color: #17324d;
+}
+
+.merchandise-header p {
+    max-width: 760px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+
+/* =========================================================
+   MERCHANDISE GRID
+   ========================================================= */
+
+.merchandise-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   MERCHANDISE CARD
+   ========================================================= */
+
+.merchandise-card {
+    background: #ffffff;
+
+    border: 1px solid #cbdde0;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.merchandise-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.merchandise-image {
+    width: 100%;
+    height: 280px;
+
+    background: #f4f8f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.merchandise-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.merchandise-card:hover .merchandise-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+   ========================================================= */
+
+.merchandise-content {
+    padding: 25px;
+}
+
+.merchandise-content h3 {
+    margin: 0 0 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+    line-height: 1.3;
+
+    color: #17324d;
+}
+
+.merchandise-content p {
+    margin: 0 0 22px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+
+/* =========================================================
+   PRICE + BUY BUTTON
+   ========================================================= */
+
+.merchandise-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.merchandise-price {
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #08aeb3;
+}
+
+.buy-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    background: #08b8bd;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background: #079ca1;
+
+    transform: translateY(-2px);
+}
+
+.buy-button i {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   HIDDEN MERCHANDISE
+   ========================================================= */
+
+.extra-merchandise {
+    display: none;
+}
+
+.extra-merchandise.show-merchandise {
+    display: block;
+}
+
+
+/* =========================================================
+   SHOW MORE BUTTON
+   ========================================================= */
+
+.merchandise-more {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+#showMerchandiseBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    border: 1px solid #08b8bd;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #08aeb3;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#showMerchandiseBtn:hover {
+    background: #08b8bd;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+#showMerchandiseBtn i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SUPPORT SECTION
+   ========================================================= */
+
+.merchandise-support {
+    background: turquoise;
+
+    padding: 75px 20px;
+
+    text-align: center;
+}
+
+.support-container {
+    width: min(1060px, 92%);
+    margin: auto;
+}
+
+.support-container h2 {
+    margin: 0 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 36px;
+    line-height: 1.3;
+
+    color: white;
+}
+
+.support-container p {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: white;
+}
+
+.support-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 12px 24px;
+
+    background: #17324d;
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.support-button:hover {
+    background: #10283d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 14px;
+        font-size: 16px;
+    }
+
+    .merchandise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        min-height: 68px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+
+        padding: 12px 0;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px 16px;
+
+        font-size: 14px;
+    }
+
+
+    .merchandise-hero {
+        min-height: 500px;
+
+        padding-top: 130px;
+    }
+
+    .merchandise-hero h1 {
+        font-size: 40px;
+    }
+
+    .merchandise-hero p {
+        font-size: 18px;
+    }
+
+
+    .merchandise-section {
+        padding: 70px 20px 80px;
+    }
+
+    .merchandise-container {
+        width: 100%;
+    }
+
+
+    .merchandise-header {
+        margin-bottom: 35px;
+    }
+
+    .merchandise-header h2 {
+        font-size: 30px;
+    }
+
+    .merchandise-header p {
+        font-size: 16px;
+    }
+
+
+    .merchandise-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    .merchandise-image {
+        height: 300px;
+    }
+
+
+    .merchandise-content h3 {
+        font-size: 22px;
+    }
+
+    .merchandise-content p {
+        font-size: 15px;
+    }
+
+
+    .support-container h2 {
+        font-size: 30px;
+    }
+
+    .support-container p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 450px) {
+
+    .merchandise-hero h1 {
+        font-size: 34px;
+    }
+
+    .merchandise-hero p {
+        font-size: 17px;
+    }
+
+
+    .merchandise-header h2 {
+        font-size: 28px;
+    }
+
+
+    .merchandise-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .merchandise-card {
+        border-radius: 10px;
+    }
+
+
+    .merchandise-image {
+        height: 250px;
+    }
+
+
+    .merchandise-content {
+        padding: 20px;
+    }
+
+
+    .merchandise-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .merchandise-price {
+        text-align: center;
+    }
+
+    .buy-button {
+        width: 100%;
+    }
+
+
+    .support-container h2 {
+        font-size: 28px;
+    }
+
+}
