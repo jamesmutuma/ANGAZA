@@ -9,10 +9,10 @@
     <meta name="description"
       content="Contact Angaza Wellness Foundation to learn more about our programs, mental wellness initiatives, community activities, partnerships, and support services.">
 
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
@@ -42,30 +42,53 @@
     <div class="nav-container">
 
         <a href="index.html" class="logo">
-            <img src="ANGAZA_LOGO.jpeg" alt="Angaza Wellness Foundation">
+            <img src="AngazamainlogoPNG.png" alt="Angaza Wellness Foundation">
         </a>
 
-        <nav class="nav-links">
 
-            <a href="index.html">Home</a>
+        <!-- NAVIGATION LINKS -->
 
-            <a href="about.html">About</a>
+        <nav class="nav-links" id="navLinks">
 
-            <a href="mission.html">Mission</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="program.html">Programs</a>
+            <a href="about.html">
+                About
+            </a>
 
-            <a href="team.html">Team</a>
+            <a href="mission.html">
+                Mission
+            </a>
 
-            <a href="testimonials.html">Testimonials</a>
+            <a href="program.html">
+                Programs
+            </a>
 
-            <a href="partners.html">Partners</a>
+            <a href="team.html">
+                Team
+            </a>
 
-            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">
+                Testimonials
+            </a>
 
-            <a href="blog.html">Blog</a>
+            <a href="merchandise.html">
+                Merchandise
+            </a>
 
-            <a href="contact.html" class="active">Contact</a>
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
 
             <a href="https://wa.me/254104699706?text=Hello%20Angaza%20Wellness%20Foundation%2C%20I%20would%20like%20to%20support%20your%20work%20through%20a%20donation."
                class="nav-donate"
@@ -75,6 +98,23 @@
             </a>
 
         </nav>
+
+
+        <!-- MOBILE HAMBURGER BUTTON -->
+
+        <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks">
+
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+
+        </button>
 
     </div>
 
@@ -164,12 +204,13 @@
                     <h3>Email</h3>
 
                     <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=angazawellnesscentre@gmail.com"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-                    angazawellnesscentre@gmail.com
+                        angazawellnesscentre@gmail.com
 
-                </a>
+                    </a>
+
                 </div>
 
             </div>
@@ -196,8 +237,13 @@
                     <a href="tel:0714027353">
                         0714 027 353
                     </a>
-                    <!--SOCIAL MEDIA-->
+
+
+                    <!-- SOCIAL MEDIA -->
+
                     <div class="social-icons">
+
+                        <!-- INSTAGRAM -->
 
                         <a href="https://www.instagram.com/angazawellnessfoundation/?hl=en"
                            target="_blank"
@@ -209,6 +255,8 @@
                         </a>
 
 
+                        <!-- FACEBOOK -->
+
                         <a href="https://web.facebook.com/angazawellnesscenter"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -218,6 +266,8 @@
 
                         </a>
 
+
+                        <!-- LINKEDIN -->
 
                         <a href="https://www.linkedin.com/in/angaza-wellness-foundation-141ba9267/"
                            target="_blank"
@@ -229,6 +279,8 @@
                         </a>
 
 
+                        <!-- TIKTOK -->
+
                         <a href="https://www.tiktok.com/@angazawellnessfoundation?_r=1&_t=ZS-99ioORcYFG6"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -239,15 +291,14 @@
                         </a>
 
 
-                        <a href="whatsapp://send?phone=254104699706&text=Hello%20Angaza%20Wellness%20 Foundation"
+                        <!-- WHATSAPP -->
+
+                        <a href="whatsapp://send?phone=254104699706&text=Hello%20Angaza%20Wellness%20Foundation"
                            target="_blank"
                            rel="noopener noreferrer"
                            aria-label="WhatsApp">
 
                             <i class="fa-brands fa-whatsapp"></i>
-
-                        </a>
-
 
                         </a>
 
@@ -388,6 +439,75 @@
 
 
 <!-- =====================================================
+     MOBILE NAVIGATION SCRIPT
+===================================================== -->
+
+<script>
+
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+
+if (navToggle && navLinks) {
+
+    navToggle.addEventListener("click", function () {
+
+        navLinks.classList.toggle("nav-links-visible");
+
+        const isOpen =
+            navLinks.classList.contains("nav-links-visible");
+
+
+        navToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+
+        navToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    });
+
+
+    const navigationItems =
+        navLinks.querySelectorAll("a");
+
+
+    navigationItems.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove(
+                "nav-links-visible"
+            );
+
+
+            navToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+
+            navToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        });
+
+    });
+
+}
+
+</script>
+
+
+<!-- =====================================================
      WHATSAPP FORM SCRIPT
 ===================================================== -->
 
@@ -401,14 +521,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const firstName =
         document.getElementById("first-name").value.trim();
 
+
     const lastName =
         document.getElementById("last-name").value.trim();
+
 
     const email =
         document.getElementById("email").value.trim();
 
+
     const subject =
         document.getElementById("subject").value.trim();
+
 
     const message =
         document.getElementById("message").value.trim();
@@ -449,11 +573,15 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         encodedMessage;
 
 
-    window.open(whatsappURL, "_blank");
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
 
 });
 
 </script>
+
 
 </body>
 </html>
