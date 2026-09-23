@@ -193,24 +193,51 @@ section {
 
 .hero {
     min-height: 708px;
-
     padding-top: 68px;
 
     position: relative;
 
     display: flex;
-
     align-items: center;
 
     overflow: hidden;
 
     background-image: url("image11.jpg");
-
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
+
+    animation: heroSlideshow 15s infinite;
+}
+
+/* =========================================
+   HERO BACKGROUND SLIDESHOW
+========================================= */
+
+@keyframes heroSlideshow {
+
+    /* IMAGE 1 */
+    0%,
+    30% {
+        background-image: url("image11.jpg");
+    }
+
+    /* IMAGE 2 */
+    33%,
+    63% {
+        background-image: url("7.jpeg");
+    }
+
+    /* IMAGE 3 */
+    66%,
+    96% {
+        background-image: url("image13.jpg");
+    }
+
+    /* Return to IMAGE 1 */
+    100% {
+        background-image: url("image11.jpg");
+    }
 }
 
 .hero-overlay {
