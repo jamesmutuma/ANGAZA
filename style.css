@@ -446,69 +446,57 @@ section {
 .program-grid {
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
 }
 
 .program-card {
     border: 1px solid #cbdde0;
-
     border-radius: 12px;
-
-    padding: 22px;
-
-    min-height: 195px;
-
     background: #ffffff;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .program-card:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
 }
 
-.program-icon {
-    width: 43px;
-
-    height: 43px;
-
-    border-radius: 50%;
-
-    background: #e3f8f8;
-
-    color: #00b6bc;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 22px;
-
-    margin-bottom: 19px;
+/* Image across the top of the card */
+.program-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
 }
 
-.program-card h3 {
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text underneath the image */
+.program-content {
+    padding: 22px;
+}
+
+.program-content h3 {
     font-size: 20px;
-
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
-.program-card p {
+.program-content p {
     color: #536577;
-
     font-size: 16px;
-
     line-height: 1.7;
 }
+
 
 
 /* =========================================
